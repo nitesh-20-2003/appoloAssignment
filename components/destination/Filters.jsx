@@ -1,12 +1,21 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
 import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
 import { FilterGroup } from "./radio";
-import { debounce } from "lodash"; // You'll need to install lodash for debounce
+import { debounce } from "lodash";
 
-const Filters = () => {
-  // Define the state with proper types (for clarity)
+// Maps display names to URL-safe query keys
+const filterKeys = {
+  "Mode of Consult": "mode",
+  "Experience Level": "experience",
+  "Fees (In Rupees)": "fees",
+  Languages: "languages",
+  Facilities: "facilities",
+};
+
+const Filters = ({ onFilterChange }) => {
   const [selectedFilters, setSelectedFilters] = useState({
     "Mode of Consult": [],
     "Experience Level": [],
@@ -15,7 +24,10 @@ const Filters = () => {
     Facilities: [],
   });
 
-  // Update handler when a group changes
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  // Handle individual filter group changes
   const handleFilterChange = (title, selected) => {
     setSelectedFilters((prev) => ({
       ...prev,
@@ -23,39 +35,50 @@ const Filters = () => {
     }));
   };
 
-  // Function to construct query from selected filters
+  // Construct URL query string based on selected filters
   const constructQuery = () => {
     let query = "?";
     for (const group in selectedFilters) {
+      const paramKey = filterKeys[group];
       if (selectedFilters[group].length > 0) {
-        query += `${group}=${selectedFilters[group].join(",")}&`;
+        query += `${paramKey}=${selectedFilters[group].join(",")}&`;
       }
     }
     return query.slice(0, -1); // Remove trailing '&'
   };
 
-  // Function to fetch data from backend
+  // Fetch filtered data from backend
   const fetchData = async () => {
     const query = constructQuery();
     try {
+      setLoading(true);
       const response = await fetch(`/api/data${query}`);
       const data = await response.json();
       console.log("Fetched data:", data);
-      // Handle the response as needed (e.g., updating the UI)
-    } catch (error) {
-      console.error("Error fetching data:", error);
+      setError(null);
+    } catch (err) {
+      console.error("Error fetching data:", err);
+      setError("Failed to load data.");
+    } finally {
+      setLoading(false);
     }
   };
 
-  // Debounced version of fetchData to limit the number of API calls
-  const debouncedFetchData = debounce(fetchData, 500); // 500ms debounce delay
+  // Debounced filter update
+  const debouncedUpdate = debounce(() => {
+    const query = constructQuery();
+    onFilterChange(query);
+    fetchData();
+  }, 500);
 
-  // Call the fetchData whenever selectedFilters changes
   useEffect(() => {
-    debouncedFetchData();
+    debouncedUpdate();
+    return () => {
+      debouncedUpdate.cancel();
+    };
   }, [selectedFilters]);
 
-  // Reset all filters to empty (null equivalent)
+  // Reset filters to default (empty)
   const handleReset = () => {
     setSelectedFilters({
       "Mode of Consult": [],
@@ -66,7 +89,7 @@ const Filters = () => {
     });
   };
 
-  // Flatten selected filters for showing as buttons
+  // Flatten selected options for display
   const selectedOptions = Object.entries(selectedFilters).flatMap(
     ([group, values]) =>
       values.map((value) => ({
@@ -82,7 +105,11 @@ const Filters = () => {
         <h2 className="text-xl font-semibold mb-4">Filters</h2>
       </div>
 
-      {/* Selected filter buttons */}
+      {/* Loading & Error states */}
+      {loading && <p className="text-sm text-gray-500 mb-2">Loading...</p>}
+      {/* {error && <p className="text-sm text-red-500 mb-2">{error}</p>} */}
+
+      {/* Selected Filters */}
       {selectedOptions.length > 0 && (
         <div className="flex flex-wrap gap-2 mb-4">
           {selectedOptions.map((opt, index) => (
@@ -91,17 +118,22 @@ const Filters = () => {
               variant="outline"
               size="sm"
               className="capitalize"
+              onClick={() => {
+                setSelectedFilters((prev) => ({
+                  ...prev,
+                  [opt.group]: prev[opt.group].filter((v) => v !== opt.value),
+                }));
+              }}
             >
-              {opt.value}
+              {opt.value} ✕
             </Button>
           ))}
 
-          {/* Reset button */}
           <Button
             variant="destructive"
             size="sm"
             onClick={handleReset}
-            className="ml-auto"
+            className="ml-auto cursor-pointer"
           >
             Reset Filters
           </Button>
@@ -110,7 +142,7 @@ const Filters = () => {
 
       <Separator className="mb-4" />
 
-      {/* Filter groups */}
+      {/* Filter Groups */}
       <FilterGroup
         title="Mode of Consult"
         options={[

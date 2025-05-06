@@ -1,11 +1,12 @@
 "use client";
-
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { PaginationDemo } from "@/components/destination/pagination";
 import { DoctorSkeletonList } from "@/components/destination/skeleton";
+
 interface Doctor {
   id: string;
   name: string;
@@ -22,62 +23,74 @@ interface Meta {
   page: number;
   pageCount: number;
 }
-const imageUrl =
-  "https://eserpvzvefifapmklzqr.supabase.co/storage/v1/object/sign/doctor/1746518802973-dotor.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2M3N2ZiZDE0LTBmMjMtNDliNS1iZTk4LTE4MzhiOGM5OWZmZCJ9.eyJ1cmwiOiJkb2N0b3IvMTc0NjUxODgwMjk3My1kb3Rvci5qcGciLCJpYXQiOjE3NDY1MjY1MzUsImV4cCI6MTc3ODA2MjUzNX0.-6CILgznHn3OTpmWRiuBgfKK68bzGibnZIRU7Iu39CI";
 
-export default function DoctorList() {
+export default function DoctorList({ filterQuery }: { filterQuery: string }) {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+
   const [doctors, setDoctors] = useState<Doctor[]>([]);
   const [loading, setLoading] = useState(true);
   const [meta, setMeta] = useState<Meta>({ page: 1, pageCount: 1 });
-  const [totalDoctors, setTotalDoctors] = useState<number>(0); // New state to track count
+  const [totalDoctors, setTotalDoctors] = useState<number>(0);
 
-  const fetchDoctors = async (page: number = 1) => {
+  const page = parseInt(searchParams.get("page") || "1");
+
+  // Parse filterQuery (string like "mode=hospital&experience=1-5")
+  const parsedFilters = new URLSearchParams(filterQuery);
+
+  const specialization = parsedFilters.get("specialization") || "";
+  const location = parsedFilters.get("location") || "";
+  const mode = parsedFilters.get("mode") || "";
+  const experience = parsedFilters.get("experience") || "";
+  const fees = parsedFilters.get("fees") || "";
+  const language = parsedFilters.get("languages") || "";
+  const facilities = parsedFilters.get("facilities") || "";
+
+  // Memoize the fetchDoctors function
+  const fetchDoctors = useCallback(async () => {
     try {
       setLoading(true);
       const limit = 5;
-      const res = await fetch(`/api/getDoctors?page=${page}&limit=${limit}`);
+      const url = `/api/getDoctors?page=${page}&limit=${limit}&specialization=${specialization}&location=${location}&mode=${mode}&experience=${experience}&fees=${fees}&languages=${language}&facilities=${facilities}`;
+      const res = await fetch(url);
       const data = await res.json();
 
       setDoctors(data.doctors);
-
-      // Calculate total pages
       const total = data.totalDoctors;
       const pageCount = Math.ceil(total / limit);
       setMeta({ page, pageCount });
-
-      setTotalDoctors(total); // Set the total count
+      setTotalDoctors(total);
     } catch (err) {
       console.error("Failed to fetch doctors", err);
     } finally {
       setLoading(false);
     }
-  };
+  }, [page, filterQuery, specialization, location, mode, experience, fees, language, facilities]);
 
   useEffect(() => {
-    fetchDoctors(1);
-  }, []);
+    fetchDoctors();
+  }, [fetchDoctors]); // Use fetchDoctors as a dependency
 
-  const handlePageChange = (pageNumber: number) => {
-    fetchDoctors(pageNumber);
+  const handlePageChange = (newPage: number) => {
+    const params = new URLSearchParams(searchParams);
+    params.set("page", newPage.toString());
+    router.push(`?${params.toString()}`);
   };
 
   return (
     <div className="mt-12 grid gap-y-8">
-      {/* Header with count */}
       <div>
         <p className="text-muted-foreground mt-1">({totalDoctors} doctors)</p>
       </div>
 
-      {/* Loading */}
       {loading && <DoctorSkeletonList />}
 
-      {/* Doctor Cards */}
       {doctors.map((doc) => (
         <Card key={doc.id} className="p-4 shadow-sm">
           <CardContent className="flex items-start gap-4">
             <div className="w-24 h-24 relative rounded-full overflow-hidden border">
               <Image
-                src={imageUrl || "/images/doctor.svg"}
+                src={"/images/doctor.svg"}
                 alt={doc.name}
                 fill
                 className="object-cover"
@@ -105,7 +118,6 @@ export default function DoctorList() {
         </Card>
       ))}
 
-      {/* Pagination */}
       {meta && meta.pageCount > 1 && (
         <PaginationDemo meta={meta} onPageChange={handlePageChange} />
       )}

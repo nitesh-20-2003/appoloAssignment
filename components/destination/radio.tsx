@@ -9,19 +9,27 @@ interface Option {
 interface FilterGroupProps {
   title: string;
   options: Option[];
+  selectedValues: string[];
+  onChange: (selected: string[]) => void;
 }
 
-export const FilterGroup: React.FC<FilterGroupProps> = ({ title, options }) => {
+export const FilterGroup: React.FC<FilterGroupProps> = ({
+  title,
+  options,
+  selectedValues,
+  onChange,
+}) => {
   const [showAll, setShowAll] = useState(false);
-  const [selected, setSelected] = useState<string[]>([]);
 
   const visibleOptions = showAll ? options : options.slice(0, 3);
   const hiddenCount = options.length - 3;
 
   const handleChange = (value: string) => {
-    setSelected((prev) =>
-      prev.includes(value) ? prev.filter((v) => v !== value) : [...prev, value]
-    );
+    const updatedSelected = selectedValues.includes(value)
+      ? selectedValues.filter((v) => v !== value)
+      : [...selectedValues, value];
+
+    onChange(updatedSelected);
   };
 
   return (
@@ -34,14 +42,13 @@ export const FilterGroup: React.FC<FilterGroupProps> = ({ title, options }) => {
               type="checkbox"
               name={title}
               value={option.value}
-              checked={selected.includes(option.value)}
+              checked={selectedValues.includes(option.value)}
               onChange={() => handleChange(option.value)}
             />
             <span>{option.label}</span>
           </label>
         ))}
 
-        {/* Show More / Show Less */}
         {options.length > 3 && (
           <button
             type="button"

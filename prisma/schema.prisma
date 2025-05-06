@@ -9,17 +9,20 @@ generator client {
 }
 
 model Doctor {
-  id           String   @id @default(uuid())
-  name         String
+  id             String   @id @default(uuid())
+  name           String
   specialization String
-  experience   String
-  degree       String
-  location     String
-  clinic       String
-  price        Int
-  cashback     Int      @default(0)
-  availability String
-  image        String
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  experience     String   // e.g., "1-5 years", "5-10 years", "10+ years"
+  degree         String
+  location       String
+  clinic         String   // e.g., "Apollo Hospital", "Fortis"
+  price          Int      // consultation fee
+  cashback       Int      @default(0)
+  availability   String   // e.g., "Available", "Unavailable"
+  image          String   // image URL
+  consultModes   String[] // NEW: ["Hospital Visit", "Online Consult"]
+  languages      String[] // NEW: ["English", "Hindi", "Spanish"]
+  facilities     String[] // NEW: ["Apollo Hospital", "Max Healthcare"]
+  createdAt      DateTime @default(now())
+  
 }
