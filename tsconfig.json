@@ -28,6 +28,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "components/navbar/Loc.tsx"
-, "components/destination/Filters.jsx", "components/ui/navigation-menu.jsx"  ],
+, "components/destination/Filters.jsx", "components/ui/navigation-menu.jsx", "components/navbar/navigationMenu.tsx"  ],
   "exclude": ["node_modules"]
 }

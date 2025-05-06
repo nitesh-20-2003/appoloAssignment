@@ -22,6 +22,8 @@ interface Meta {
   page: number;
   pageCount: number;
 }
+const imageUrl =
+  "https://eserpvzvefifapmklzqr.supabase.co/storage/v1/object/sign/doctor/1746518802973-dotor.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2M3N2ZiZDE0LTBmMjMtNDliNS1iZTk4LTE4MzhiOGM5OWZmZCJ9.eyJ1cmwiOiJkb2N0b3IvMTc0NjUxODgwMjk3My1kb3Rvci5qcGciLCJpYXQiOjE3NDY1MjY1MzUsImV4cCI6MTc3ODA2MjUzNX0.-6CILgznHn3OTpmWRiuBgfKK68bzGibnZIRU7Iu39CI";
 
 export default function DoctorList() {
   const [doctors, setDoctors] = useState<Doctor[]>([]);
@@ -75,7 +77,7 @@ export default function DoctorList() {
           <CardContent className="flex items-start gap-4">
             <div className="w-24 h-24 relative rounded-full overflow-hidden border">
               <Image
-                src={doc.image || "/images/doctor.svg"}
+                src={imageUrl || "/images/doctor.svg"}
                 alt={doc.name}
                 fill
                 className="object-cover"
