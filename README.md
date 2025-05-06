@@ -14,4 +14,21 @@
 -zod validation
 
 ## Project Structure
-<pre> notes-app/ ├── client/ (React frontend) │ ├── src/ │ │ ├── components/ │ │ │ ├── Note.jsx │ │ │ ├── NoteForm.jsx │ │ │ └── NoteList.jsx │ │ ├── App.jsx │ │ ├── main.jsx │ │ └── App.css │ └── package.json └── server/ (Express backend) ├── models/ │ └── Note.js ├── routes/ │ └── notes.js ├── index.js └── package.json </pre>
+<pre> notes-app/
+├── client/ (React frontend)
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Note.jsx
+│   │   │   ├── NoteForm.jsx
+│   │   │   └── NoteList.jsx
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── App.css
+│   └── package.json
+└── server/ (Express backend)
+    ├── models/
+    │   └── Note.js
+    ├── routes/
+    │   └── notes.js
+    ├── index.js
+    └── package.json</pre>
