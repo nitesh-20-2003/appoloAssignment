@@ -1,0 +1,25 @@
+datasource db {
+  provider          = "postgresql"
+  url               = env("DATABASE_URL")
+  directUrl         = env("DIRECT_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Doctor {
+  id           String   @id @default(uuid())
+  name         String
+  specialization String
+  experience   String
+  degree       String
+  location     String
+  clinic       String
+  price        Int
+  cashback     Int      @default(0)
+  availability String
+  image        String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
