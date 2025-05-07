@@ -45,13 +45,14 @@ export default function DoctorList({ filterQuery }: { filterQuery: string }) {
   const fees = parsedFilters.get("fees") || "";
   const language = parsedFilters.get("languages") || "";
   const facilities = parsedFilters.get("facilities") || "";
-
+const sort=parsedFilters.get("sort") || "";
+// console.log(sort)
   // Memoize the fetchDoctors function
   const fetchDoctors = useCallback(async () => {
     try {
       setLoading(true);
       const limit = 5;
-      const url = `/api/getDoctors?page=${page}&limit=${limit}&specialization=${specialization}&location=${location}&mode=${mode}&experience=${experience}&fees=${fees}&languages=${language}&facilities=${facilities}`;
+      const url = `/api/getDoctors?page=${page}&limit=${limit}&sort=${sort}&specialization=${specialization}&location=${location}&mode=${mode}&experience=${experience}&fees=${fees}&languages=${language}&facilities=${facilities}`;
       const res = await fetch(url);
       const data = await res.json();
 
@@ -74,10 +75,11 @@ export default function DoctorList({ filterQuery }: { filterQuery: string }) {
     fees,
     language,
     facilities,
-  ]); // Removed filterQuery
+  sort
+  ]); 
   useEffect(() => {
     fetchDoctors();
-  }, [fetchDoctors]); // Use fetchDoctors as a dependency
+  }, [fetchDoctors]); 
 
   const handlePageChange = (newPage: number) => {
     const params = new URLSearchParams(searchParams);
@@ -110,7 +112,7 @@ export default function DoctorList({ filterQuery }: { filterQuery: string }) {
                 {doc.specialization}
               </p>
               <p className="text-sm">
-                <span className="font-semibold">{doc.experience}</span> •{" "}
+                <span className="font-semibold">{doc.experience} <span> Yr</span></span> •{" "}
                 {doc.degree}
               </p>
               <p className="text-sm text-muted-foreground">{doc.location}</p>

@@ -9,105 +9,140 @@ export const GET = async (req: NextRequest) => {
     const limit = Number(searchParams.get("limit")) || 5;
     const skip = (page - 1) * limit;
 
-    // Get filter and sort values from query params
     const mode = searchParams.get("mode");
     const experience = searchParams.get("experience");
+    // console.log("Experience filter:", experience);
     const fees = searchParams.get("fees");
     const languages = searchParams.get("languages");
     const facilities = searchParams.get("facilities");
     const sort = searchParams.get("sort");
+    // console.log("sort :",sort)
+    // console.log(searchParams)
+    // console.log("languages:", languages);
+    const andConditions: Prisma.DoctorWhereInput[] = [];
 
-    // Build the filter object
-    const filter: Prisma.DoctorWhereInput = {};
-
-    // Handle consult modes filter
+    // Consult mode
     if (mode) {
-      const modeValues = mode.split(",");
-      const dbModes = modeValues.map((m) =>
-        m === "hospital"
-          ? "Hospital Visit"
-          : m === "online"
-          ? "Online Consult"
-          : m
-      );
+      const dbModes = mode
+        .split(",")
+        .map((m) =>
+          m === "hospital"
+            ? "Hospital Visit"
+            : m === "online"
+            ? "Online Consult"
+            : m
+        );
 
-      filter.consultModes = {
-        hasSome: dbModes,
-      };
+      andConditions.push({
+        consultModes: {
+          hasSome: dbModes,
+        },
+      });
     }
 
-    // Experience filter
     if (experience) {
-      const experienceRanges = experience.split(",");
-      const experienceConditions: Prisma.IntFilter[] = [];
+      // console.log("Experience filter:", experience);
+      const experienceRanges = experience
+        .split(",")
+        .map((range) => range.trim());
+      const orConditions: Prisma.DoctorWhereInput[] = [];
 
       for (const range of experienceRanges) {
-        if (range.includes("+")) {
+        if (range.endsWith("+")) {
           const minExp = parseInt(range.replace("+", ""));
-          experienceConditions.push({
-            gte: minExp,
+          orConditions.push({
+            experience: {
+              gte: minExp,
+            },
           });
         } else if (range.includes("-")) {
-          const [minExp, maxExp] = range.split("-").map(Number);
-          experienceConditions.push({
-            gte: minExp,
-            lte: maxExp,
+          const [minExp, maxExp] = range
+            .split("-")
+            .map((s) => parseInt(s.trim()));
+          orConditions.push({
+            experience: {
+              gte: minExp,
+              lte: maxExp,
+            },
           });
+        } else {
+          const exactExp = parseInt(range);
+          if (!isNaN(exactExp)) {
+            orConditions.push({
+              experience: {
+                equals: exactExp,
+              },
+            });
+          }
         }
       }
 
-      if (experienceConditions.length > 0) {
-        filter.OR = experienceConditions.map((condition) => ({
-          experience: condition,
-        }));
+      if (orConditions.length > 0) {
+        andConditions.push({ OR: orConditions });
       }
     }
 
     // Fees filter
     if (fees) {
       const feeRanges = fees.split(",");
-      const feeConditions: Prisma.IntFilter[] = [];
+      const orConditions: Prisma.DoctorWhereInput[] = [];
 
       for (const range of feeRanges) {
         if (range.includes("+")) {
           const minFee = parseInt(range.replace("+", ""));
-          feeConditions.push({
-            gte: minFee,
+          orConditions.push({
+            price: {
+              gte: minFee,
+            },
           });
         } else if (range.includes("-")) {
           const [minFee, maxFee] = range.split("-").map(Number);
-          feeConditions.push({
-            gte: minFee,
-            lte: maxFee,
+          orConditions.push({
+            price: {
+              gte: minFee,
+              lte: maxFee,
+            },
           });
         }
       }
 
-      if (feeConditions.length > 0) {
-        filter.OR = feeConditions.map((condition) => ({
-          price: condition,
-        }));
+      if (orConditions.length > 0) {
+        andConditions.push({ OR: orConditions });
       }
     }
 
     // Languages filter
     if (languages) {
-      filter.languages = {
-        hasSome: languages.split(","),
-      };
+      const languageList = languages
+        .split(",")
+        .map((lang) => lang.trim())
+        .filter((lang) => lang.length > 0);
+      // console.log("Language list:", languageList);
+      if (languageList.length > 0) {
+        andConditions.push({
+          languages: {
+            hasSome: languageList,
+          },
+        });
+        // console.log(andConditions)
+      }
     }
 
     // Facilities filter
     if (facilities) {
-      filter.facilities = {
-        hasSome: facilities.split(","),
-      };
+      andConditions.push({
+        facilities: {
+          hasSome: facilities.split(","),
+        },
+      });
     }
 
-    // Handle sorting
+    // Sorting
     const orderBy: Prisma.DoctorOrderByWithRelationInput[] = [];
 
     if (sort) {
+      console.log("Sort parameter:", sort);
+      // console.log("Sort parameter:", sort);
       switch (sort) {
         case "priceLowToHigh":
           orderBy.push({ price: "asc" });
@@ -121,18 +156,20 @@ export const GET = async (req: NextRequest) => {
         case "experience-desc":
           orderBy.push({ experience: "desc" });
           break;
-        // Add more sort options as needed
       }
     }
 
+    const whereFilter: Prisma.DoctorWhereInput =
+      andConditions.length > 0 ? { AND: andConditions } : {};
+
     const [doctors, totalDoctors] = await Promise.all([
       prisma.doctor.findMany({
-        where: filter,
+        where: whereFilter,
         skip,
         take: limit,
         orderBy: orderBy.length > 0 ? orderBy : undefined,
       }),
-      prisma.doctor.count({ where: filter }),
+      prisma.doctor.count({ where: whereFilter }),
     ]);
 
     return NextResponse.json({ doctors, totalDoctors });
