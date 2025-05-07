@@ -19,30 +19,50 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
-const frameworks = [
+const indianCities = [
   {
-    value: "next.js",
-    label: "Next.js",
+    value: "mumbai",
+    label: "Mumbai",
   },
   {
-    value: "sveltekit",
-    label: "SvelteKit",
+    value: "delhi",
+    label: "Delhi",
   },
   {
-    value: "nuxt.js",
-    label: "Nuxt.js",
+    value: "bangalore",
+    label: "Bangalore",
   },
   {
-    value: "remix",
-    label: "Remix",
+    value: "hyderabad",
+    label: "Hyderabad",
   },
   {
-    value: "astro",
-    label: "Astro",
+    value: "chennai",
+    label: "Chennai",
+  },
+  {
+    value: "kolkata",
+    label: "Kolkata",
+  },
+  {
+    value: "pune",
+    label: "Pune",
+  },
+  {
+    value: "jaipur",
+    label: "Jaipur",
+  },
+  {
+    value: "ahmedabad",
+    label: "Ahmedabad",
+  },
+  {
+    value: "kochi",
+    label: "Kochi",
   },
 ];
 
-export function ComboboxDemo() {
+export function CityCombobox() {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState("");
 
@@ -56,31 +76,31 @@ export function ComboboxDemo() {
           className="w-[200px] justify-between"
         >
           {value
-            ? frameworks.find((framework) => framework.value === value)?.label
-            : "Select framework..."}
-          <ChevronsUpDown className="opacity-50" />
+            ? indianCities.find((city) => city.value === value)?.label
+            : "Select city..."}
+          <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">
         <Command>
-          <CommandInput placeholder="Search framework..." />
+          <CommandInput placeholder="Search city..." />
           <CommandList>
-            <CommandEmpty>No framework found.</CommandEmpty>
+            <CommandEmpty>No city found.</CommandEmpty>
             <CommandGroup>
-              {frameworks.map((framework) => (
+              {indianCities.map((city) => (
                 <CommandItem
-                  key={framework.value}
-                  value={framework.value}
+                  key={city.value}
+                  value={city.value}
                   onSelect={(currentValue) => {
                     setValue(currentValue === value ? "" : currentValue);
                     setOpen(false);
                   }}
                 >
-                  {framework.label}
+                  {city.label}
                   <Check
                     className={cn(
-                      "ml-auto",
-                      value === framework.value ? "opacity-100" : "opacity-0"
+                      "ml-auto h-4 w-4",
+                      value === city.value ? "opacity-100" : "opacity-0"
                     )}
                   />
                 </CommandItem>
