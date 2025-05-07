@@ -3,7 +3,15 @@ import { ComboboxDemo } from "./MainFilters";
 import { BreadcrumbWithCustomSeparator } from "./BreadCrumbs";
 import DoctorList from "./DoctorsList";
 
-const Main = ({ filterQuery }: { filterQuery: string }) => {
+const Main = ({
+  filterQuery,
+  sortBy,
+  onSortChange,
+}: {
+  filterQuery: string;
+  sortBy: string;
+  onSortChange: (value: string) => void;
+}) => {
   return (
     <main className="col-span-9 p-6">
       <BreadcrumbWithCustomSeparator />
@@ -14,10 +22,9 @@ const Main = ({ filterQuery }: { filterQuery: string }) => {
           </h1>
         </div>
 
-        <ComboboxDemo />
+        <ComboboxDemo selectedValue={sortBy} onSelectSort={onSortChange} />
       </div>
 
-      {/* Wrap DoctorList with Suspense if it's performing async tasks */}
       <Suspense fallback={<div>Loading Doctors...</div>}>
         <DoctorList filterQuery={filterQuery} />
       </Suspense>

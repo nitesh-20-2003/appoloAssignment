@@ -28,6 +28,7 @@ export async function POST(req: NextRequest) {
     // Convert string numbers to actual numbers where needed
     rawFields.price = Number(rawFields.price).toString();
     rawFields.cashback = Number(rawFields.cashback).toString();
+    rawFields.experience = Number(rawFields.experience).toString(); // Ensure experience is a stringified number
 
     // Validate the rest of the fields
     const validatedData = validateWithZodSchema(doctorSchema, rawFields);
@@ -37,6 +38,7 @@ export async function POST(req: NextRequest) {
       data: {
         ...validatedData,
         image: imageUrl,
+        experience: Number(validatedData.experience), // Ensure experience is a number
       },
     });
 

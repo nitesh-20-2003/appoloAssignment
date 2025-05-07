@@ -1,4782 +1,561 @@
 [
   {
-    "id": "785f44a4-b922-4253-b56a-33dee4f818d2",
-    "name": "Emily Johnson",
+    "id": "1",
+    "name": "Dr. Amit Sharma",
+    "specialization": "Cardiologist",
+    "experience": 12,
+    "degree": "MD, DM Cardiology",
+    "location": "Delhi",
+    "clinic": "Apollo Hospital",
+    "price": 1500,
+    "cashback": 100,
+    "availability": "Available",
+    "image": "https://example.com/doctors/amit_sharma.jpg",
+    "consultModes": ["Hospital Visit", "Online Consult"],
+    "languages": ["English", "Hindi"],
+    "facilities": ["Apollo Hospital"]
+  },
+  {
+    "id": "2",
+    "name": "Dr. Priya Patel",
     "specialization": "Dermatologist",
-    "experience": "1-5 years",
-    "degree": "MS",
-    "location": "New York",
-    "clinic": "Max Healthcare",
-    "price": 313,
-    "cashback": 8,
+    "experience": 8,
+    "degree": "MD Dermatology",
+    "location": "Mumbai",
+    "clinic": "Fortis",
+    "price": 1200,
+    "cashback": 80,
     "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/29.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish",
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
+    "image": "https://example.com/doctors/priya_patel.jpg",
+    "consultModes": ["Hospital Visit"],
+    "languages": ["English", "Hindi", "Gujarati"],
+    "facilities": ["Fortis"]
   },
   {
-    "id": "b32c2f19-e23d-4e12-bdf2-97b627c35e6f",
-    "name": "Emily Smith",
-    "specialization": "Orthopedic",
-    "experience": "5-10 years",
-    "degree": "DM",
-    "location": "Phoenix",
-    "clinic": "Other clinic",
-    "price": 486,
-    "cashback": 147,
+    "id": "3",
+    "name": "Dr. Rajesh Khanna",
+    "specialization": "Orthopedic Surgeon",
+    "experience": 15,
+    "degree": "MS Orthopedics",
+    "location": "Bangalore",
+    "clinic": "Manipal Hospital",
+    "price": 2000,
+    "cashback": 150,
     "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/42.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
+    "image": "https://example.com/doctors/rajesh_khanna.jpg",
+    "consultModes": ["Hospital Visit", "Online Consult"],
+    "languages": ["English", "Hindi", "Kannada"],
+    "facilities": ["Manipal Hospital"]
   },
   {
-    "id": "2a4bcd81-a8d8-4579-95b7-b92bafc2caa6",
-    "name": "Jane Williams",
-    "specialization": "Dermatologist",
-    "experience": "10+ years",
-    "degree": "MBBS",
-    "location": "Chicago",
-    "clinic": "Apollo Hospital",
-    "price": 1987,
-    "cashback": 415,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/85.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "637c1e81-0da7-44cf-bf0e-1cc88c08e80c",
-    "name": "Sarah Brown",
-    "specialization": "Orthopedic",
-    "experience": "1-5 years",
-    "degree": "MS",
-    "location": "Los Angeles",
-    "clinic": "Max Healthcare",
-    "price": 1493,
-    "cashback": 116,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/28.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "74afe167-ef5b-4406-ba89-86ed064efecf",
-    "name": "Sarah Garcia",
-    "specialization": "Orthopedic",
-    "experience": "10+ years",
-    "degree": "MBBS",
-    "location": "New York",
-    "clinic": "Max Healthcare",
-    "price": 1779,
-    "cashback": 426,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/50.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "94e6afbb-c3de-43b8-aaed-954658d048b7",
-    "name": "Michael Jones",
+    "id": "4",
+    "name": "Dr. Ananya Reddy",
     "specialization": "Pediatrician",
-    "experience": "1-5 years",
-    "degree": "MBBS",
-    "location": "New York",
-    "clinic": "Fortis",
-    "price": 688,
-    "cashback": 449,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/79.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "b2f58be2-75fe-467e-85b2-d512f85404e1",
-    "name": "Emily Smith",
-    "specialization": "Cardiologist",
-    "experience": "10+ years",
-    "degree": "MD",
-    "location": "Houston",
-    "clinic": "Apollo Hospital",
-    "price": 1129,
-    "cashback": 373,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/29.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "7fa9779a-7a22-4c46-87a9-581091ff95b3",
-    "name": "Jane Brown",
-    "specialization": "Orthopedic",
-    "experience": "5-10 years",
-    "degree": "MCh",
-    "location": "Chicago",
-    "clinic": "Other clinic",
-    "price": 1981,
-    "cashback": 364,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/52.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "54eb471b-5165-42a3-83b4-cffc687637d8",
-    "name": "Sarah Johnson",
-    "specialization": "Cardiologist",
-    "experience": "10+ years",
-    "degree": "MBBS",
-    "location": "Houston",
-    "clinic": "Other clinic",
-    "price": 1749,
-    "cashback": 466,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/50.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "da3e678a-6518-43a9-8b93-f737e2e35607",
-    "name": "Alex Williams",
-    "specialization": "Cardiologist",
-    "experience": "5-10 years",
-    "degree": "MS",
-    "location": "Los Angeles",
-    "clinic": "Max Healthcare",
-    "price": 370,
-    "cashback": 463,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/21.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "4e57796b-6aae-4034-9423-94a15c7dc547",
-    "name": "Alex Smith",
-    "specialization": "Psychiatrist",
-    "experience": "5-10 years",
-    "degree": "DM",
-    "location": "Houston",
-    "clinic": "Apollo Hospital",
-    "price": 552,
-    "cashback": 362,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/69.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "2b631fb0-e7ce-46f0-96c2-64addfc96ae6",
-    "name": "John Williams",
-    "specialization": "Dermatologist",
-    "experience": "5-10 years",
-    "degree": "DM",
-    "location": "New York",
-    "clinic": "Apollo Hospital",
-    "price": 1032,
-    "cashback": 132,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/20.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish",
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "3d78283b-1fd0-450a-9923-c131553405f9",
-    "name": "Michael Smith",
-    "specialization": "Cardiologist",
-    "experience": "10+ years",
-    "degree": "MBBS",
-    "location": "Chicago",
-    "clinic": "Other clinic",
-    "price": 222,
-    "cashback": 67,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/86.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "76c3beaf-7772-4224-8206-1452d3046ced",
-    "name": "John Smith",
-    "specialization": "Orthopedic",
-    "experience": "5-10 years",
-    "degree": "DM",
-    "location": "Houston",
-    "clinic": "Fortis",
-    "price": 1824,
-    "cashback": 492,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/65.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "fe146fd8-e237-4e08-8b6d-bcd92717db5c",
-    "name": "Michael Garcia",
-    "specialization": "Pediatrician",
-    "experience": "10+ years",
-    "degree": "DM",
-    "location": "New York",
-    "clinic": "Apollo Hospital",
-    "price": 1961,
-    "cashback": 46,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/15.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "598f0e7b-9ee9-4564-a9f5-b0af71aaa54c",
-    "name": "Emily Garcia",
-    "specialization": "Orthopedic",
-    "experience": "10+ years",
-    "degree": "MCh",
-    "location": "Phoenix",
-    "clinic": "Other clinic",
-    "price": 1695,
-    "cashback": 424,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/66.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "23d777a7-ac40-4f08-a8ef-7562a1d69afb",
-    "name": "Michael Johnson",
-    "specialization": "Dermatologist",
-    "experience": "10+ years",
-    "degree": "MCh",
-    "location": "Houston",
-    "clinic": "Apollo Hospital",
-    "price": 652,
-    "cashback": 209,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/70.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "fab061d7-3700-4248-abf6-25e3bfa9016c",
-    "name": "Alex Brown",
-    "specialization": "Cardiologist",
-    "experience": "1-5 years",
-    "degree": "MCh",
-    "location": "New York",
-    "clinic": "Max Healthcare",
-    "price": 1259,
-    "cashback": 338,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/26.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "7fbf3840-1a19-48ad-a460-82a049a6a31d",
-    "name": "John Brown",
-    "specialization": "Pediatrician",
-    "experience": "10+ years",
-    "degree": "DM",
-    "location": "Houston",
-    "clinic": "Fortis",
-    "price": 1815,
-    "cashback": 123,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/99.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "88093127-2aa2-4501-9fc7-33d712552ccc",
-    "name": "John Garcia",
-    "specialization": "Pediatrician",
-    "experience": "1-5 years",
-    "degree": "MCh",
-    "location": "Chicago",
-    "clinic": "Fortis",
-    "price": 874,
-    "cashback": 170,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/93.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "21911c7a-709a-4943-a360-30aefe3a446f",
-    "name": "John Brown",
-    "specialization": "Orthopedic",
-    "experience": "1-5 years",
-    "degree": "MD",
-    "location": "Los Angeles",
-    "clinic": "Apollo Hospital",
-    "price": 1115,
-    "cashback": 479,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/98.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "8684cf12-a631-4958-a7bf-df9a3fe48b0a",
-    "name": "Emily Jones",
-    "specialization": "Psychiatrist",
-    "experience": "5-10 years",
-    "degree": "MD",
-    "location": "Chicago",
-    "clinic": "Other clinic",
-    "price": 573,
-    "cashback": 86,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/88.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "2b6b499e-3de3-4691-a864-ec0f0ae096e2",
-    "name": "John Garcia",
-    "specialization": "Pediatrician",
-    "experience": "1-5 years",
-    "degree": "DM",
-    "location": "Chicago",
-    "clinic": "Apollo Hospital",
-    "price": 365,
-    "cashback": 161,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/82.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "7c2a64e9-2e1a-4ae9-8528-5a7816a14910",
-    "name": "Jane Jones",
-    "specialization": "Pediatrician",
-    "experience": "5-10 years",
-    "degree": "DM",
-    "location": "New York",
-    "clinic": "Fortis",
-    "price": 632,
-    "cashback": 99,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/92.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "79051126-afa7-408a-a9b8-364d785d9197",
-    "name": "Michael Brown",
-    "specialization": "Orthopedic",
-    "experience": "10+ years",
-    "degree": "DM",
-    "location": "Los Angeles",
-    "clinic": "Other clinic",
-    "price": 555,
-    "cashback": 174,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/32.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish",
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "0202a9ba-49fc-4391-bebf-75970dc9d145",
-    "name": "Sarah Smith",
-    "specialization": "Pediatrician",
-    "experience": "5-10 years",
-    "degree": "MD",
-    "location": "New York",
-    "clinic": "Fortis",
-    "price": 1521,
-    "cashback": 417,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/75.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "648acd3b-c5f8-459e-aa42-cbffe37ef6c1",
-    "name": "Sarah Johnson",
-    "specialization": "Orthopedic",
-    "experience": "5-10 years",
-    "degree": "MS",
-    "location": "Houston",
-    "clinic": "Fortis",
-    "price": 1503,
-    "cashback": 283,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/94.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Spanish",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "e9cc185b-b577-4a0e-a91f-532f89997251",
-    "name": "Michael Johnson",
-    "specialization": "Cardiologist",
-    "experience": "5-10 years",
-    "degree": "DM",
-    "location": "Phoenix",
-    "clinic": "Fortis",
-    "price": 610,
-    "cashback": 446,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/4.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "2778c072-e7f2-4419-aca8-40cd659405e3",
-    "name": "Michael Garcia",
-    "specialization": "Psychiatrist",
-    "experience": "1-5 years",
-    "degree": "MS",
-    "location": "Los Angeles",
-    "clinic": "Fortis",
-    "price": 1033,
-    "cashback": 24,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/59.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "c1e35ef7-1f95-4425-b49b-8b5e5b196c40",
-    "name": "Jane Garcia",
-    "specialization": "Orthopedic",
-    "experience": "5-10 years",
-    "degree": "MS",
-    "location": "Houston",
-    "clinic": "Max Healthcare",
-    "price": 1889,
-    "cashback": 397,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/3.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "668ad320-21e4-474a-9d64-971f85d076ea",
-    "name": "Alex Brown",
-    "specialization": "Dermatologist",
-    "experience": "5-10 years",
-    "degree": "MD",
-    "location": "Phoenix",
-    "clinic": "Fortis",
-    "price": 381,
-    "cashback": 157,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/75.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "9494f0e2-7d81-43ab-930f-77f560dfc1fb",
-    "name": "Emily Garcia",
-    "specialization": "Cardiologist",
-    "experience": "10+ years",
-    "degree": "MD",
-    "location": "Chicago",
-    "clinic": "Max Healthcare",
-    "price": 1825,
-    "cashback": 455,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/62.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "a580f576-08cf-4576-8b61-885c3af2fefb",
-    "name": "Michael Garcia",
-    "specialization": "Pediatrician",
-    "experience": "5-10 years",
-    "degree": "MBBS",
-    "location": "Los Angeles",
-    "clinic": "Fortis",
-    "price": 1339,
-    "cashback": 227,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/18.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "41558491-3ae8-48ff-9597-39856a9e275a",
-    "name": "Sarah Jones",
-    "specialization": "Cardiologist",
-    "experience": "5-10 years",
-    "degree": "MD",
-    "location": "Houston",
-    "clinic": "Apollo Hospital",
-    "price": 820,
-    "cashback": 165,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/98.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "6e5ae2a4-3a2f-448b-989d-7e094c0f009d",
-    "name": "Alex Johnson",
-    "specialization": "Orthopedic",
-    "experience": "1-5 years",
-    "degree": "MBBS",
-    "location": "Phoenix",
-    "clinic": "Other clinic",
-    "price": 209,
-    "cashback": 97,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/35.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "361554c8-2c2e-4110-a168-3492ce89c888",
-    "name": "Alex Williams",
-    "specialization": "Pediatrician",
-    "experience": "5-10 years",
-    "degree": "MD",
-    "location": "Chicago",
-    "clinic": "Apollo Hospital",
-    "price": 1512,
-    "cashback": 471,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/36.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "fdc307bd-bc2b-4f0b-a53e-3a366920618b",
-    "name": "John Williams",
-    "specialization": "Pediatrician",
-    "experience": "5-10 years",
-    "degree": "MCh",
-    "location": "New York",
-    "clinic": "Fortis",
-    "price": 1872,
-    "cashback": 414,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/76.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "16a0ebd7-a0d6-47ca-9dca-ffcbda5432f6",
-    "name": "Sarah Johnson",
-    "specialization": "Cardiologist",
-    "experience": "10+ years",
-    "degree": "MCh",
-    "location": "Houston",
-    "clinic": "Fortis",
-    "price": 1933,
-    "cashback": 329,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/23.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish",
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "8f4e8d5d-736c-44f4-9e2c-2fbad4152a85",
-    "name": "Alex Brown",
-    "specialization": "Pediatrician",
-    "experience": "1-5 years",
-    "degree": "MCh",
-    "location": "Chicago",
-    "clinic": "Max Healthcare",
-    "price": 961,
-    "cashback": 297,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/49.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "4b28cc67-43aa-4781-acf3-dfa157c7b344",
-    "name": "Sarah Johnson",
-    "specialization": "Orthopedic",
-    "experience": "10+ years",
-    "degree": "MCh",
-    "location": "Houston",
-    "clinic": "Apollo Hospital",
-    "price": 354,
-    "cashback": 381,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/96.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "9691ea03-01f8-4698-9227-f02e3c93839e",
-    "name": "Jane Johnson",
-    "specialization": "Cardiologist",
-    "experience": "1-5 years",
-    "degree": "MBBS",
-    "location": "Chicago",
-    "clinic": "Other clinic",
-    "price": 946,
-    "cashback": 21,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/77.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "e68156a2-56af-4f19-b731-108fa08039e0",
-    "name": "Emily Williams",
-    "specialization": "Psychiatrist",
-    "experience": "1-5 years",
-    "degree": "MS",
-    "location": "New York",
-    "clinic": "Max Healthcare",
-    "price": 1831,
-    "cashback": 215,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/57.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "81981e69-360d-422f-bbca-b8c0682e7295",
-    "name": "Jane Garcia",
-    "specialization": "Orthopedic",
-    "experience": "5-10 years",
-    "degree": "MCh",
-    "location": "Phoenix",
-    "clinic": "Other clinic",
-    "price": 1802,
-    "cashback": 372,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/70.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "e79dbc72-2b38-49cb-adb2-8c1e95461c99",
-    "name": "John Williams",
-    "specialization": "Orthopedic",
-    "experience": "5-10 years",
-    "degree": "DM",
-    "location": "Houston",
-    "clinic": "Other clinic",
-    "price": 1474,
-    "cashback": 158,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/52.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "4f61ea6c-8b13-4078-b79c-48cc5a0b21af",
-    "name": "Jane Brown",
-    "specialization": "Orthopedic",
-    "experience": "10+ years",
-    "degree": "MCh",
-    "location": "Los Angeles",
-    "clinic": "Fortis",
-    "price": 1350,
-    "cashback": 202,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/84.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "8a5258fc-b7e2-4b6a-98f2-d16a85971f61",
-    "name": "John Williams",
-    "specialization": "Cardiologist",
-    "experience": "1-5 years",
-    "degree": "DM",
-    "location": "Houston",
-    "clinic": "Fortis",
-    "price": 1056,
-    "cashback": 55,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/31.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "6e1aab28-6197-401a-948f-efd13ed21c51",
-    "name": "Michael Brown",
-    "specialization": "Pediatrician",
-    "experience": "1-5 years",
-    "degree": "MD",
-    "location": "Houston",
-    "clinic": "Fortis",
-    "price": 1873,
-    "cashback": 99,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/71.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "e31b2f34-9b36-4955-bbb5-b447c045fcd3",
-    "name": "John Smith",
-    "specialization": "Cardiologist",
-    "experience": "10+ years",
-    "degree": "MS",
-    "location": "Chicago",
-    "clinic": "Fortis",
-    "price": 413,
-    "cashback": 319,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/73.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish",
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "e1e65727-80fd-43e5-88c2-78d97351a41c",
-    "name": "Jane Johnson",
-    "specialization": "Orthopedic",
-    "experience": "1-5 years",
-    "degree": "DM",
-    "location": "New York",
-    "clinic": "Fortis",
-    "price": 949,
-    "cashback": 209,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/96.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "717464f3-bc38-4cae-aed6-b752afa74536",
-    "name": "John Jones",
-    "specialization": "Dermatologist",
-    "experience": "5-10 years",
-    "degree": "MCh",
-    "location": "Los Angeles",
-    "clinic": "Fortis",
-    "price": 592,
-    "cashback": 118,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/86.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "de897116-f85e-472f-a3c8-84c5d6b7fd64",
-    "name": "Jane Jones",
-    "specialization": "Pediatrician",
-    "experience": "5-10 years",
-    "degree": "MCh",
-    "location": "New York",
-    "clinic": "Max Healthcare",
-    "price": 381,
-    "cashback": 380,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/20.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "3f7e0327-8836-4903-b5a7-2612b3ce7a5d",
-    "name": "John Brown",
-    "specialization": "Psychiatrist",
-    "experience": "10+ years",
-    "degree": "DM",
-    "location": "Los Angeles",
-    "clinic": "Max Healthcare",
-    "price": 1198,
-    "cashback": 422,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/84.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "05c4a303-b4b4-44bc-9d43-7616953ee85e",
-    "name": "Michael Smith",
-    "specialization": "Orthopedic",
-    "experience": "1-5 years",
-    "degree": "DM",
-    "location": "Houston",
-    "clinic": "Other clinic",
-    "price": 417,
-    "cashback": 361,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/1.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "b1df373c-3f51-41e1-9ece-d846b75eeb87",
-    "name": "Michael Smith",
-    "specialization": "Psychiatrist",
-    "experience": "10+ years",
-    "degree": "MBBS",
-    "location": "Los Angeles",
-    "clinic": "Fortis",
-    "price": 1257,
-    "cashback": 365,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/25.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "ea339af7-e177-4561-ae98-ede27af46405",
-    "name": "Jane Williams",
-    "specialization": "Cardiologist",
-    "experience": "1-5 years",
-    "degree": "MS",
-    "location": "Los Angeles",
-    "clinic": "Fortis",
-    "price": 1336,
-    "cashback": 252,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/24.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "09927a55-f4f5-40b4-810c-274a05a7f8e6",
-    "name": "John Jones",
-    "specialization": "Psychiatrist",
-    "experience": "10+ years",
-    "degree": "MS",
-    "location": "Phoenix",
-    "clinic": "Apollo Hospital",
-    "price": 1159,
-    "cashback": 375,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/79.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "3ed08953-ca11-40b8-98cc-64f52b1f56f2",
-    "name": "Jane Jones",
-    "specialization": "Orthopedic",
-    "experience": "5-10 years",
-    "degree": "MBBS",
-    "location": "New York",
-    "clinic": "Fortis",
-    "price": 494,
-    "cashback": 6,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/93.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish",
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "ed528940-9394-4f2d-aeef-70773185f840",
-    "name": "John Jones",
-    "specialization": "Dermatologist",
-    "experience": "10+ years",
-    "degree": "MS",
-    "location": "Chicago",
-    "clinic": "Fortis",
-    "price": 1598,
-    "cashback": 401,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/5.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "a2319f75-f51a-494d-b459-6e3e0557f82c",
-    "name": "Alex Smith",
-    "specialization": "Psychiatrist",
-    "experience": "10+ years",
-    "degree": "MD",
-    "location": "Houston",
-    "clinic": "Fortis",
-    "price": 1591,
-    "cashback": 73,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/3.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "bb8cb151-73b5-4470-82fe-87ce72236478",
-    "name": "Sarah Johnson",
-    "specialization": "Dermatologist",
-    "experience": "10+ years",
-    "degree": "MS",
-    "location": "Chicago",
-    "clinic": "Other clinic",
-    "price": 1422,
-    "cashback": 41,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/10.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "1c6d4df5-cb47-439a-b925-44d6bb8b3f89",
-    "name": "Alex Garcia",
-    "specialization": "Pediatrician",
-    "experience": "5-10 years",
-    "degree": "MD",
-    "location": "Los Angeles",
-    "clinic": "Other clinic",
-    "price": 1676,
-    "cashback": 291,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/30.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "45b29e8b-8c6e-44b9-a6a2-84a6ae9f79b0",
-    "name": "Alex Williams",
-    "specialization": "Cardiologist",
-    "experience": "10+ years",
-    "degree": "MCh",
-    "location": "Houston",
-    "clinic": "Apollo Hospital",
-    "price": 376,
-    "cashback": 79,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/77.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "fd7a1666-d1e1-4a8a-ba40-469f1231407e",
-    "name": "Jane Brown",
-    "specialization": "Dermatologist",
-    "experience": "10+ years",
-    "degree": "MCh",
-    "location": "New York",
-    "clinic": "Apollo Hospital",
-    "price": 994,
-    "cashback": 264,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/88.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "d169db2a-1673-4700-98d5-8ed64f899aa8",
-    "name": "Emily Smith",
-    "specialization": "Dermatologist",
-    "experience": "5-10 years",
-    "degree": "MCh",
-    "location": "Chicago",
-    "clinic": "Max Healthcare",
-    "price": 934,
-    "cashback": 234,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/39.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "4e3c2171-11b5-4aad-8327-666541dff981",
-    "name": "Michael Johnson",
-    "specialization": "Pediatrician",
-    "experience": "10+ years",
-    "degree": "DM",
-    "location": "Chicago",
-    "clinic": "Max Healthcare",
-    "price": 218,
-    "cashback": 345,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/66.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "7c27bd73-82c5-4407-826e-3999aac9947c",
-    "name": "John Johnson",
-    "specialization": "Dermatologist",
-    "experience": "1-5 years",
-    "degree": "DM",
-    "location": "Chicago",
-    "clinic": "Apollo Hospital",
-    "price": 379,
-    "cashback": 181,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/43.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "47f5fece-2781-487c-a58e-56e0ef4f8029",
-    "name": "Michael Smith",
-    "specialization": "Cardiologist",
-    "experience": "5-10 years",
-    "degree": "MBBS",
-    "location": "New York",
-    "clinic": "Fortis",
-    "price": 1119,
-    "cashback": 216,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/74.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "96ad9bdc-65cc-435c-9c98-badddd335d39",
-    "name": "John Brown",
-    "specialization": "Dermatologist",
-    "experience": "10+ years",
-    "degree": "MD",
-    "location": "New York",
-    "clinic": "Fortis",
-    "price": 952,
-    "cashback": 164,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/37.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "ea11da22-fe36-47ee-b820-c6e6ed22ddb5",
-    "name": "Sarah Smith",
-    "specialization": "Pediatrician",
-    "experience": "5-10 years",
-    "degree": "DM",
-    "location": "Phoenix",
-    "clinic": "Apollo Hospital",
-    "price": 1778,
-    "cashback": 260,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/83.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "48008a1f-5289-4b47-9a07-3bd86f62b35a",
-    "name": "Sarah Brown",
-    "specialization": "Pediatrician",
-    "experience": "5-10 years",
-    "degree": "MS",
-    "location": "Los Angeles",
-    "clinic": "Fortis",
-    "price": 1816,
-    "cashback": 485,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/59.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Spanish",
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "89197456-3044-4730-9454-6cbb6f12a63c",
-    "name": "Emily Jones",
-    "specialization": "Dermatologist",
-    "experience": "1-5 years",
-    "degree": "MD",
-    "location": "Los Angeles",
-    "clinic": "Max Healthcare",
-    "price": 1072,
-    "cashback": 218,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/52.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "cda61850-843a-4655-a417-6ce7f07393b6",
-    "name": "Emily Johnson",
-    "specialization": "Dermatologist",
-    "experience": "5-10 years",
-    "degree": "DM",
-    "location": "Chicago",
-    "clinic": "Other clinic",
-    "price": 1002,
-    "cashback": 467,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/87.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "931b2da6-df03-4753-bb01-0f6101d62a97",
-    "name": "Alex Jones",
-    "specialization": "Psychiatrist",
-    "experience": "10+ years",
-    "degree": "MBBS",
-    "location": "Phoenix",
-    "clinic": "Other clinic",
-    "price": 952,
-    "cashback": 254,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/8.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "d9388d32-0046-4d8d-8e35-7d45575d15b8",
-    "name": "Michael Williams",
-    "specialization": "Cardiologist",
-    "experience": "1-5 years",
-    "degree": "DM",
-    "location": "Los Angeles",
-    "clinic": "Max Healthcare",
-    "price": 1163,
-    "cashback": 473,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/37.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "92f41b07-e279-40d2-9306-1999327b1cfd",
-    "name": "Sarah Johnson",
-    "specialization": "Dermatologist",
-    "experience": "1-5 years",
-    "degree": "MCh",
-    "location": "New York",
-    "clinic": "Max Healthcare",
-    "price": 1842,
-    "cashback": 221,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/59.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish",
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "e03b7d62-c9e4-4679-9f43-dd2a1008d27c",
-    "name": "Alex Jones",
-    "specialization": "Dermatologist",
-    "experience": "10+ years",
-    "degree": "MD",
-    "location": "Chicago",
-    "clinic": "Apollo Hospital",
-    "price": 1817,
-    "cashback": 135,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/20.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "65094bfc-6ba5-4151-8bb8-c3483c101fbf",
-    "name": "Alex Garcia",
-    "specialization": "Pediatrician",
-    "experience": "1-5 years",
-    "degree": "MCh",
-    "location": "Phoenix",
-    "clinic": "Other clinic",
-    "price": 249,
-    "cashback": 28,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/80.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "0ded1259-0be7-422e-8ec6-612f40ab2757",
-    "name": "Jane Garcia",
-    "specialization": "Psychiatrist",
-    "experience": "5-10 years",
-    "degree": "MD",
-    "location": "Phoenix",
-    "clinic": "Fortis",
-    "price": 1801,
-    "cashback": 365,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/12.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Spanish",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "84772282-05e4-468d-9687-e5c45d0c9dea",
-    "name": "Michael Garcia",
-    "specialization": "Orthopedic",
-    "experience": "1-5 years",
-    "degree": "MD",
-    "location": "Chicago",
-    "clinic": "Other clinic",
-    "price": 398,
-    "cashback": 441,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/32.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "19d86500-50ab-402f-9bd8-441e764f8155",
-    "name": "Sarah Garcia",
-    "specialization": "Psychiatrist",
-    "experience": "5-10 years",
-    "degree": "DM",
-    "location": "New York",
-    "clinic": "Apollo Hospital",
-    "price": 1573,
-    "cashback": 379,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/36.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "f124cc95-59d2-4e30-9620-a8e9f6a6fa46",
-    "name": "Alex Johnson",
-    "specialization": "Psychiatrist",
-    "experience": "5-10 years",
-    "degree": "MS",
-    "location": "Chicago",
-    "clinic": "Max Healthcare",
-    "price": 1097,
-    "cashback": 158,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/47.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "491b1264-4a63-4e9e-8fb3-a0a889020a5b",
-    "name": "Emily Williams",
-    "specialization": "Cardiologist",
-    "experience": "1-5 years",
-    "degree": "DM",
-    "location": "Houston",
-    "clinic": "Other clinic",
-    "price": 837,
-    "cashback": 69,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/38.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "cce628cf-738b-498d-be0c-de363e7e6ee0",
-    "name": "John Garcia",
-    "specialization": "Pediatrician",
-    "experience": "1-5 years",
-    "degree": "MS",
-    "location": "Los Angeles",
-    "clinic": "Max Healthcare",
-    "price": 516,
-    "cashback": 260,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/40.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "adcf499e-da55-450c-bbba-f8dbfef5c44f",
-    "name": "Sarah Jones",
-    "specialization": "Orthopedic",
-    "experience": "10+ years",
-    "degree": "DM",
-    "location": "New York",
-    "clinic": "Apollo Hospital",
-    "price": 663,
-    "cashback": 259,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/9.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "ed75d6c9-0042-480a-9122-e130a904c459",
-    "name": "Michael Brown",
-    "specialization": "Pediatrician",
-    "experience": "1-5 years",
-    "degree": "MCh",
-    "location": "Los Angeles",
-    "clinic": "Max Healthcare",
-    "price": 459,
-    "cashback": 487,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/54.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "bd4aa941-ff4c-4ddd-a418-780eca7912ee",
-    "name": "Emily Smith",
-    "specialization": "Pediatrician",
-    "experience": "1-5 years",
-    "degree": "MS",
-    "location": "New York",
-    "clinic": "Fortis",
-    "price": 1546,
-    "cashback": 115,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/20.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "456decbc-bc75-434b-b646-936c7836b6fd",
-    "name": "Jane Johnson",
-    "specialization": "Dermatologist",
-    "experience": "5-10 years",
-    "degree": "DM",
-    "location": "New York",
-    "clinic": "Apollo Hospital",
-    "price": 850,
-    "cashback": 204,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/12.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "64d202d6-739f-439c-a945-52e0d4effc38",
-    "name": "Emily Johnson",
-    "specialization": "Orthopedic",
-    "experience": "5-10 years",
-    "degree": "MS",
-    "location": "New York",
-    "clinic": "Fortis",
-    "price": 963,
-    "cashback": 61,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/13.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "ea84755d-6dff-4e6f-bb11-5358ceb6597b",
-    "name": "Sarah Williams",
-    "specialization": "Pediatrician",
-    "experience": "1-5 years",
-    "degree": "MBBS",
-    "location": "Phoenix",
-    "clinic": "Apollo Hospital",
-    "price": 222,
-    "cashback": 165,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/83.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "24372ac2-3b18-46e5-9d5f-fb437189f4ad",
-    "name": "John Smith",
-    "specialization": "Cardiologist",
-    "experience": "1-5 years",
-    "degree": "MBBS",
-    "location": "Phoenix",
-    "clinic": "Fortis",
-    "price": 1289,
-    "cashback": 182,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/9.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "124cebe3-fc73-42ee-af49-22cf5af6ad97",
-    "name": "John Smith",
-    "specialization": "Orthopedic",
-    "experience": "1-5 years",
-    "degree": "MCh",
-    "location": "New York",
-    "clinic": "Other clinic",
-    "price": 1317,
+    "experience": 5,
+    "degree": "MD Pediatrics",
+    "location": "Hyderabad",
+    "clinic": "Yashoda Hospital",
+    "price": 800,
     "cashback": 50,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/24.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "7cd28e8a-c423-4bd7-81d9-6fedb7854132",
-    "name": "John Garcia",
-    "specialization": "Orthopedic",
-    "experience": "10+ years",
-    "degree": "MS",
-    "location": "Houston",
-    "clinic": "Other clinic",
-    "price": 795,
-    "cashback": 92,
     "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/17.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
+    "image": "https://example.com/doctors/ananya_reddy.jpg",
+    "consultModes": ["Hospital Visit", "Online Consult"],
+    "languages": ["English", "Hindi", "Telugu"],
+    "facilities": ["Yashoda Hospital"]
   },
   {
-    "id": "20a58daf-3f68-4b1f-8ba8-a1256e5caac3",
-    "name": "Emily Williams",
-    "specialization": "Cardiologist",
-    "experience": "1-5 years",
-    "degree": "MCh",
-    "location": "Chicago",
-    "clinic": "Other clinic",
-    "price": 1228,
-    "cashback": 361,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/96.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "0b032297-ee0a-4440-bbad-896d73e7c01b",
-    "name": "John Brown",
-    "specialization": "Psychiatrist",
-    "experience": "1-5 years",
-    "degree": "MCh",
-    "location": "Houston",
-    "clinic": "Other clinic",
-    "price": 1303,
-    "cashback": 256,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/51.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "dc541a08-f02c-4086-84b7-350ecaf9d55b",
-    "name": "Emily Smith",
-    "specialization": "Dermatologist",
-    "experience": "1-5 years",
-    "degree": "MBBS",
-    "location": "Houston",
+    "id": "5",
+    "name": "Dr. Vikram Singh",
+    "specialization": "Neurologist",
+    "experience": 10,
+    "degree": "DM Neurology",
+    "location": "Delhi",
     "clinic": "Max Healthcare",
-    "price": 747,
-    "cashback": 293,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/60.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "8ffd6f3f-9fba-4a9c-94f6-c339ab6abffb",
-    "name": "John Brown",
-    "specialization": "Pediatrician",
-    "experience": "10+ years",
-    "degree": "MCh",
-    "location": "Phoenix",
-    "clinic": "Other clinic",
-    "price": 1471,
-    "cashback": 438,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/41.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "d7510046-7689-4d8c-9f5a-0cb87fbd2212",
-    "name": "Emily Johnson",
-    "specialization": "Pediatrician",
-    "experience": "5-10 years",
-    "degree": "MCh",
-    "location": "New York",
-    "clinic": "Max Healthcare",
-    "price": 1319,
-    "cashback": 305,
+    "price": 1800,
+    "cashback": 120,
     "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/5.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
+    "image": "https://example.com/doctors/vikram_singh.jpg",
+    "consultModes": ["Hospital Visit"],
+    "languages": ["English", "Hindi"],
+    "facilities": ["Max Healthcare"]
   },
   {
-    "id": "9c8a89f1-99b1-4657-b8fd-61013c3c1ef4",
-    "name": "Alex Jones",
-    "specialization": "Orthopedic",
-    "experience": "10+ years",
-    "degree": "MCh",
-    "location": "Los Angeles",
-    "clinic": "Max Healthcare",
-    "price": 1635,
-    "cashback": 234,
+    "id": "6",
+    "name": "Dr. Neha Gupta",
+    "specialization": "Gynecologist",
+    "experience": 7,
+    "degree": "MD Obstetrics & Gynecology",
+    "location": "Mumbai",
+    "clinic": "Lilavati Hospital",
+    "price": 1300,
+    "cashback": 90,
     "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/81.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
+    "image": "https://example.com/doctors/neha_gupta.jpg",
+    "consultModes": ["Hospital Visit", "Online Consult"],
+    "languages": ["English", "Hindi", "Marathi"],
+    "facilities": ["Lilavati Hospital"]
   },
   {
-    "id": "67512f4e-84c4-4ebc-98ac-01a42950eb05",
-    "name": "Emily Williams",
-    "specialization": "Psychiatrist",
-    "experience": "1-5 years",
-    "degree": "DM",
-    "location": "Los Angeles",
-    "clinic": "Max Healthcare",
-    "price": 1870,
-    "cashback": 466,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/87.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "4833106e-d009-4316-b54b-aa03f8e6d83f",
-    "name": "Emily Jones",
-    "specialization": "Orthopedic",
-    "experience": "5-10 years",
-    "degree": "DM",
-    "location": "New York",
-    "clinic": "Other clinic",
-    "price": 1044,
-    "cashback": 395,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/14.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish",
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "de4785b8-a901-42d4-9769-f4519f7b1436",
-    "name": "Emily Johnson",
-    "specialization": "Psychiatrist",
-    "experience": "5-10 years",
-    "degree": "MD",
-    "location": "Houston",
+    "id": "7",
+    "name": "Dr. Arjun Kumar",
+    "specialization": "General Physician",
+    "experience": 3,
+    "degree": "MBBS, MD Medicine",
+    "location": "Chennai",
     "clinic": "Apollo Hospital",
-    "price": 1854,
-    "cashback": 42,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/38.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "b064d0bc-b523-4e4e-b22e-ce841a79de8a",
-    "name": "John Garcia",
-    "specialization": "Pediatrician",
-    "experience": "1-5 years",
-    "degree": "MS",
-    "location": "Houston",
-    "clinic": "Fortis",
-    "price": 640,
+    "price": 600,
     "cashback": 40,
     "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/28.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
+    "image": "https://example.com/doctors/arjun_kumar.jpg",
+    "consultModes": ["Online Consult"],
+    "languages": ["English", "Tamil"],
+    "facilities": ["Apollo Hospital"]
   },
   {
-    "id": "19d476b0-2968-4feb-9ce4-ed89e8c0bf57",
-    "name": "Sarah Brown",
+    "id": "8",
+    "name": "Dr. Sneha Joshi",
     "specialization": "Psychiatrist",
-    "experience": "10+ years",
-    "degree": "MS",
-    "location": "New York",
-    "clinic": "Other clinic",
-    "price": 769,
-    "cashback": 413,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/21.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "59f1f1ed-b1a6-4bda-8ab3-e042ac132960",
-    "name": "Michael Brown",
-    "specialization": "Orthopedic",
-    "experience": "5-10 years",
-    "degree": "MCh",
-    "location": "Houston",
-    "clinic": "Max Healthcare",
-    "price": 329,
-    "cashback": 454,
+    "experience": 9,
+    "degree": "MD Psychiatry",
+    "location": "Pune",
+    "clinic": "Ruby Hall Clinic",
+    "price": 1600,
+    "cashback": 110,
     "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/53.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
+    "image": "https://example.com/doctors/sneha_joshi.jpg",
+    "consultModes": ["Hospital Visit", "Online Consult"],
+    "languages": ["English", "Hindi", "Marathi"],
+    "facilities": ["Ruby Hall Clinic"]
   },
   {
-    "id": "1c7f02f5-4ced-4c10-a5d4-9b1cce647801",
-    "name": "John Brown",
+    "id": "9",
+    "name": "Dr. Rohit Malhotra",
+    "specialization": "ENT Specialist",
+    "experience": 11,
+    "degree": "MS ENT",
+    "location": "Delhi",
+    "clinic": "BLK Hospital",
+    "price": 1400,
+    "cashback": 95,
+    "availability": "Available",
+    "image": "https://example.com/doctors/rohit_malhotra.jpg",
+    "consultModes": ["Hospital Visit"],
+    "languages": ["English", "Hindi"],
+    "facilities": ["BLK Hospital"]
+  },
+  {
+    "id": "10",
+    "name": "Dr. Meera Nair",
+    "specialization": "Ophthalmologist",
+    "experience": 6,
+    "degree": "MS Ophthalmology",
+    "location": "Kochi",
+    "clinic": "Aster Medcity",
+    "price": 1100,
+    "cashback": 70,
+    "availability": "Available",
+    "image": "https://example.com/doctors/meera_nair.jpg",
+    "consultModes": ["Hospital Visit", "Online Consult"],
+    "languages": ["English", "Malayalam", "Hindi"],
+    "facilities": ["Aster Medcity"]
+  },
+  {
+    "id": "11",
+    "name": "Dr. Sanjay Verma",
+    "specialization": "Urologist",
+    "experience": 14,
+    "degree": "MCh Urology",
+    "location": "Delhi",
+    "clinic": "Max Healthcare",
+    "price": 2200,
+    "cashback": 160,
+    "availability": "Available",
+    "image": "https://example.com/doctors/sanjay_verma.jpg",
+    "consultModes": ["Hospital Visit"],
+    "languages": ["English", "Hindi"],
+    "facilities": ["Max Healthcare"]
+  },
+  {
+    "id": "12",
+    "name": "Dr. Anjali Desai",
+    "specialization": "Endocrinologist",
+    "experience": 8,
+    "degree": "DM Endocrinology",
+    "location": "Mumbai",
+    "clinic": "Fortis",
+    "price": 1700,
+    "cashback": 115,
+    "availability": "Available",
+    "image": "https://example.com/doctors/anjali_desai.jpg",
+    "consultModes": ["Hospital Visit", "Online Consult"],
+    "languages": ["English", "Hindi", "Marathi"],
+    "facilities": ["Fortis"]
+  },
+  {
+    "id": "13",
+    "name": "Dr. Karthik Rao",
+    "specialization": "Gastroenterologist",
+    "experience": 10,
+    "degree": "DM Gastroenterology",
+    "location": "Bangalore",
+    "clinic": "Manipal Hospital",
+    "price": 1900,
+    "cashback": 130,
+    "availability": "Available",
+    "image": "https://example.com/doctors/karthik_rao.jpg",
+    "consultModes": ["Hospital Visit"],
+    "languages": ["English", "Kannada", "Hindi"],
+    "facilities": ["Manipal Hospital"]
+  },
+  {
+    "id": "14",
+    "name": "Dr. Pooja Mehta",
+    "specialization": "Pulmonologist",
+    "experience": 7,
+    "degree": "DM Pulmonology",
+    "location": "Ahmedabad",
+    "clinic": "Apollo Hospital",
+    "price": 1500,
+    "cashback": 100,
+    "availability": "Available",
+    "image": "https://example.com/doctors/pooja_mehta.jpg",
+    "consultModes": ["Hospital Visit", "Online Consult"],
+    "languages": ["English", "Hindi", "Gujarati"],
+    "facilities": ["Apollo Hospital"]
+  },
+  {
+    "id": "15",
+    "name": "Dr. Rahul Banerjee",
+    "specialization": "Rheumatologist",
+    "experience": 9,
+    "degree": "DM Rheumatology",
+    "location": "Kolkata",
+    "clinic": "AMRI Hospital",
+    "price": 1600,
+    "cashback": 110,
+    "availability": "Available",
+    "image": "https://example.com/doctors/rahul_banerjee.jpg",
+    "consultModes": ["Hospital Visit"],
+    "languages": ["English", "Hindi", "Bengali"],
+    "facilities": ["AMRI Hospital"]
+  },
+  {
+    "id": "16",
+    "name": "Dr. Nandini Kapoor",
+    "specialization": "Oncologist",
+    "experience": 12,
+    "degree": "DM Oncology",
+    "location": "Delhi",
+    "clinic": "Max Healthcare",
+    "price": 2500,
+    "cashback": 180,
+    "availability": "Available",
+    "image": "https://example.com/doctors/nandini_kapoor.jpg",
+    "consultModes": ["Hospital Visit"],
+    "languages": ["English", "Hindi"],
+    "facilities": ["Max Healthcare"]
+  },
+  {
+    "id": "17",
+    "name": "Dr. Aditya Iyer",
+    "specialization": "Nephrologist",
+    "experience": 11,
+    "degree": "DM Nephrology",
+    "location": "Chennai",
+    "clinic": "Apollo Hospital",
+    "price": 2100,
+    "cashback": 150,
+    "availability": "Available",
+    "image": "https://example.com/doctors/aditya_iyer.jpg",
+    "consultModes": ["Hospital Visit", "Online Consult"],
+    "languages": ["English", "Tamil", "Hindi"],
+    "facilities": ["Apollo Hospital"]
+  },
+  {
+    "id": "18",
+    "name": "Dr. Shalini Nair",
+    "specialization": "Hematologist",
+    "experience": 8,
+    "degree": "DM Hematology",
+    "location": "Kochi",
+    "clinic": "Aster Medcity",
+    "price": 1800,
+    "cashback": 125,
+    "availability": "Available",
+    "image": "https://example.com/doctors/shalini_nair.jpg",
+    "consultModes": ["Hospital Visit"],
+    "languages": ["English", "Malayalam"],
+    "facilities": ["Aster Medcity"]
+  },
+  {
+    "id": "19",
+    "name": "Dr. Varun Seth",
+    "specialization": "General Surgeon",
+    "experience": 6,
+    "degree": "MS General Surgery",
+    "location": "Bangalore",
+    "clinic": "Fortis",
+    "price": 1400,
+    "cashback": 95,
+    "availability": "Available",
+    "image": "https://example.com/doctors/varun_seth.jpg",
+    "consultModes": ["Hospital Visit"],
+    "languages": ["English", "Kannada", "Hindi"],
+    "facilities": ["Fortis"]
+  },
+  {
+    "id": "20",
+    "name": "Dr. Tanvi Shah",
+    "specialization": "Dentist",
+    "experience": 4,
+    "degree": "BDS, MDS",
+    "location": "Mumbai",
+    "clinic": "Lilavati Hospital",
+    "price": 900,
+    "cashback": 60,
+    "availability": "Available",
+    "image": "https://example.com/doctors/tanvi_shah.jpg",
+    "consultModes": ["Hospital Visit", "Online Consult"],
+    "languages": ["English", "Hindi", "Marathi"],
+    "facilities": ["Lilavati Hospital"]
+  },
+  {
+    "id": "21",
+    "name": "Dr. Akash Patel",
+    "specialization": "Cardiologist",
+    "experience": 13,
+    "degree": "DM Cardiology",
+    "location": "Ahmedabad",
+    "clinic": "Apollo Hospital",
+    "price": 2000,
+    "cashback": 140,
+    "availability": "Available",
+    "image": "https://example.com/doctors/akash_patel.jpg",
+    "consultModes": ["Hospital Visit", "Online Consult"],
+    "languages": ["English", "Hindi", "Gujarati"],
+    "facilities": ["Apollo Hospital"]
+  },
+  {
+    "id": "22",
+    "name": "Dr. Ishita Reddy",
+    "specialization": "Dermatologist",
+    "experience": 5,
+    "degree": "MD Dermatology",
+    "location": "Hyderabad",
+    "clinic": "Yashoda Hospital",
+    "price": 1100,
+    "cashback": 75,
+    "availability": "Available",
+    "image": "https://example.com/doctors/ishita_reddy.jpg",
+    "consultModes": ["Hospital Visit"],
+    "languages": ["English", "Telugu", "Hindi"],
+    "facilities": ["Yashoda Hospital"]
+  },
+  {
+    "id": "23",
+    "name": "Dr. Rohan Mehra",
+    "specialization": "Orthopedic Surgeon",
+    "experience": 9,
+    "degree": "MS Orthopedics",
+    "location": "Delhi",
+    "clinic": "BLK Hospital",
+    "price": 1800,
+    "cashback": 125,
+    "availability": "Available",
+    "image": "https://example.com/doctors/rohan_mehra.jpg",
+    "consultModes": ["Hospital Visit"],
+    "languages": ["English", "Hindi"],
+    "facilities": ["BLK Hospital"]
+  },
+  {
+    "id": "24",
+    "name": "Dr. Kavita Srinivasan",
     "specialization": "Pediatrician",
-    "experience": "10+ years",
-    "degree": "MBBS",
-    "location": "Los Angeles",
-    "clinic": "Other clinic",
-    "price": 747,
-    "cashback": 487,
+    "experience": 7,
+    "degree": "MD Pediatrics",
+    "location": "Chennai",
+    "clinic": "Apollo Hospital",
+    "price": 1000,
+    "cashback": 70,
     "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/61.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
+    "image": "https://example.com/doctors/kavita_srinivasan.jpg",
+    "consultModes": ["Hospital Visit", "Online Consult"],
+    "languages": ["English", "Tamil"],
+    "facilities": ["Apollo Hospital"]
   },
   {
-    "id": "84b83e49-dc6b-4e12-99bc-1dd45fbf4670",
-    "name": "Jane Williams",
-    "specialization": "Pediatrician",
-    "experience": "10+ years",
-    "degree": "MS",
-    "location": "New York",
-    "clinic": "Max Healthcare",
-    "price": 1067,
-    "cashback": 445,
+    "id": "25",
+    "name": "Dr. Arnav Gupta",
+    "specialization": "Neurologist",
+    "experience": 11,
+    "degree": "DM Neurology",
+    "location": "Kolkata",
+    "clinic": "AMRI Hospital",
+    "price": 1900,
+    "cashback": 135,
     "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/43.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Spanish",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
+    "image": "https://example.com/doctors/arnav_gupta.jpg",
+    "consultModes": ["Hospital Visit"],
+    "languages": ["English", "Hindi", "Bengali"],
+    "facilities": ["AMRI Hospital"]
   },
   {
-    "id": "25f5178c-9b0f-4455-8ef7-82458273df3a",
-    "name": "Alex Smith",
+    "id": "26",
+    "name": "Dr. Mira Choudhary",
+    "specialization": "Gynecologist",
+    "experience": 8,
+    "degree": "MD Obstetrics & Gynecology",
+    "location": "Jaipur",
+    "clinic": "Fortis",
+    "price": 1500,
+    "cashback": 105,
+    "availability": "Available",
+    "image": "https://example.com/doctors/mira_choudhary.jpg",
+    "consultModes": ["Hospital Visit", "Online Consult"],
+    "languages": ["English", "Hindi"],
+    "facilities": ["Fortis"]
+  },
+  {
+    "id": "27",
+    "name": "Dr. Siddharth Joshi",
+    "specialization": "General Physician",
+    "experience": 4,
+    "degree": "MBBS, MD Medicine",
+    "location": "Pune",
+    "clinic": "Ruby Hall Clinic",
+    "price": 700,
+    "cashback": 50,
+    "availability": "Available",
+    "image": "https://example.com/doctors/siddharth_joshi.jpg",
+    "consultModes": ["Online Consult"],
+    "languages": ["English", "Hindi", "Marathi"],
+    "facilities": ["Ruby Hall Clinic"]
+  },
+  {
+    "id": "28",
+    "name": "Dr. Preeti Nair",
     "specialization": "Psychiatrist",
-    "experience": "10+ years",
-    "degree": "MCh",
-    "location": "Los Angeles",
-    "clinic": "Fortis",
-    "price": 1851,
-    "cashback": 420,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/34.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "c1729360-235d-4b44-823c-bd0683de8593",
-    "name": "Jane Johnson",
-    "specialization": "Dermatologist",
-    "experience": "1-5 years",
-    "degree": "MD",
-    "location": "Phoenix",
-    "clinic": "Other clinic",
-    "price": 1679,
-    "cashback": 352,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/76.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "60ecd3d6-e7b2-47d7-93e6-a348b280243b",
-    "name": "Alex Jones",
-    "specialization": "Cardiologist",
-    "experience": "1-5 years",
-    "degree": "DM",
-    "location": "Houston",
-    "clinic": "Other clinic",
-    "price": 988,
-    "cashback": 457,
+    "experience": 10,
+    "degree": "MD Psychiatry",
+    "location": "Kochi",
+    "clinic": "Aster Medcity",
+    "price": 1700,
+    "cashback": 120,
     "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/62.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
+    "image": "https://example.com/doctors/preeti_nair.jpg",
+    "consultModes": ["Hospital Visit", "Online Consult"],
+    "languages": ["English", "Malayalam"],
+    "facilities": ["Aster Medcity"]
   },
   {
-    "id": "1f85260a-f0ba-42c7-adea-324a5bda6aac",
-    "name": "Emily Garcia",
-    "specialization": "Psychiatrist",
-    "experience": "1-5 years",
-    "degree": "MBBS",
-    "location": "Phoenix",
-    "clinic": "Fortis",
-    "price": 214,
-    "cashback": 83,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/88.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "cf182fe3-9378-4f16-a223-0cf5ad2757e0",
-    "name": "Michael Johnson",
-    "specialization": "Dermatologist",
-    "experience": "5-10 years",
-    "degree": "DM",
-    "location": "Los Angeles",
-    "clinic": "Fortis",
-    "price": 964,
-    "cashback": 427,
+    "id": "29",
+    "name": "Dr. Harsh Malhotra",
+    "specialization": "ENT Specialist",
+    "experience": 12,
+    "degree": "MS ENT",
+    "location": "Delhi",
+    "clinic": "Max Healthcare",
+    "price": 1600,
+    "cashback": 115,
     "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/59.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
+    "image": "https://example.com/doctors/harsh_malhotra.jpg",
+    "consultModes": ["Hospital Visit"],
+    "languages": ["English", "Hindi"],
+    "facilities": ["Max Healthcare"]
   },
   {
-    "id": "d770e46c-4d60-4a5a-9a6f-215a64b7d13c",
-    "name": "Alex Johnson",
-    "specialization": "Cardiologist",
-    "experience": "1-5 years",
-    "degree": "MS",
-    "location": "Los Angeles",
+    "id": "30",
+    "name": "Dr. Ananya Iyer",
+    "specialization": "Ophthalmologist",
+    "experience": 6,
+    "degree": "MS Ophthalmology",
+    "location": "Chennai",
     "clinic": "Apollo Hospital",
-    "price": 606,
-    "cashback": 65,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/67.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
+    "price": 1200,
+    "cashback": 85,
+    "availability": "Available",
+    "image": "https://example.com/doctors/ananya_iyer.jpg",
+    "consultModes": ["Hospital Visit", "Online Consult"],
+    "languages": ["English", "Tamil"],
+    "facilities": ["Apollo Hospital"]
   },
   {
-    "id": "d00e5a51-b09a-466f-af33-5beb5b3d43fa",
-    "name": "Emily Williams",
-    "specialization": "Pediatrician",
-    "experience": "1-5 years",
-    "degree": "MS",
-    "location": "Houston",
-    "clinic": "Other clinic",
-    "price": 1690,
-    "cashback": 25,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/16.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
+    "id": "31",
+    "name": "Dr. Rajiv Verma",
+    "specialization": "Urologist",
+    "experience": 15,
+    "degree": "MCh Urology",
+    "location": "Mumbai",
+    "clinic": "Lilavati Hospital",
+    "price": 2300,
+    "cashback": 170,
+    "availability": "Available",
+    "image": "https://example.com/doctors/rajiv_verma.jpg",
+    "consultModes": ["Hospital Visit"],
+    "languages": ["English", "Hindi", "Marathi"],
+    "facilities": ["Lilavati Hospital"]
   },
   {
-    "id": "064a4679-12fe-428b-8bb6-3cb323bc8509",
-    "name": "Emily Jones",
-    "specialization": "Orthopedic",
-    "experience": "1-5 years",
-    "degree": "MS",
-    "location": "Houston",
-    "clinic": "Max Healthcare",
-    "price": 658,
-    "cashback": 79,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/4.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
+    "id": "32",
+    "name": "Dr. Shweta Deshpande",
+    "specialization": "Endocrinologist",
+    "experience": 7,
+    "degree": "DM Endocrinology",
+    "location": "Bangalore",
+    "clinic": "Manipal Hospital",
+    "price": 1800,
+    "cashback": 125,
+    "availability": "Available",
+    "image": "https://example.com/doctors/shweta_deshpande.jpg",
+    "consultModes": ["Hospital Visit", "Online Consult"],
+    "languages": ["English", "Kannada", "Hindi"],
+    "facilities": ["Manipal Hospital"]
   },
   {
-    "id": "3de9b98d-d37f-46d4-b3cc-7d9eb9eaa9c6",
-    "name": "Michael Garcia",
-    "specialization": "Cardiologist",
-    "experience": "1-5 years",
-    "degree": "MCh",
-    "location": "Chicago",
+    "id": "33",
+    "name": "Dr. Nikhil Rao",
+    "specialization": "Gastroenterologist",
+    "experience": 9,
+    "degree": "DM Gastroenterology",
+    "location": "Hyderabad",
+    "clinic": "Yashoda Hospital",
+    "price": 2000,
+    "cashback": 145,
+    "availability": "Available",
+    "image": "https://example.com/doctors/nikhil_rao.jpg",
+    "consultModes": ["Hospital Visit"],
+    "languages": ["English", "Telugu", "Hindi"],
+    "facilities": ["Yashoda Hospital"]
+  },
+  {
+    "id": "34",
+    "name": "Dr. Poonam Mehta",
+    "specialization": "Pulmonologist",
+    "experience": 8,
+    "degree": "DM Pulmonology",
+    "location": "Ahmedabad",
     "clinic": "Apollo Hospital",
-    "price": 916,
-    "cashback": 477,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/69.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "f620e42f-53e0-41ef-886c-175b3fc4fe38",
-    "name": "Emily Garcia",
-    "specialization": "Orthopedic",
-    "experience": "1-5 years",
-    "degree": "DM",
-    "location": "Chicago",
-    "clinic": "Fortis",
-    "price": 1586,
-    "cashback": 344,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/49.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "6ceb9cd2-e1b3-4301-a21a-60f561912421",
-    "name": "John Brown",
-    "specialization": "Pediatrician",
-    "experience": "10+ years",
-    "degree": "MBBS",
-    "location": "Phoenix",
-    "clinic": "Fortis",
-    "price": 1320,
-    "cashback": 494,
+    "price": 1600,
+    "cashback": 110,
     "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/8.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
+    "image": "https://example.com/doctors/poonam_mehta.jpg",
+    "consultModes": ["Hospital Visit", "Online Consult"],
+    "languages": ["English", "Hindi", "Gujarati"],
+    "facilities": ["Apollo Hospital"]
   },
   {
-    "id": "c27b1d93-b793-409f-a3ea-7e864e1cbef2",
-    "name": "Emily Williams",
-    "specialization": "Orthopedic",
-    "experience": "10+ years",
-    "degree": "MD",
-    "location": "New York",
-    "clinic": "Apollo Hospital",
-    "price": 1126,
-    "cashback": 6,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/38.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Spanish",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "c5eb4ea5-ec6d-4c3c-9b77-fc020f2bed50",
-    "name": "Emily Williams",
-    "specialization": "Psychiatrist",
-    "experience": "5-10 years",
-    "degree": "MCh",
-    "location": "Houston",
-    "clinic": "Other clinic",
-    "price": 1813,
-    "cashback": 481,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/55.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "d705ff15-b9ff-46a2-8525-ab1ae0e69e74",
-    "name": "Jane Smith",
-    "specialization": "Dermatologist",
-    "experience": "1-5 years",
-    "degree": "MBBS",
-    "location": "Los Angeles",
-    "clinic": "Apollo Hospital",
-    "price": 1840,
-    "cashback": 347,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/28.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "edd928f2-702e-4d0f-861b-14956dfd39e7",
-    "name": "Michael Garcia",
-    "specialization": "Psychiatrist",
-    "experience": "10+ years",
-    "degree": "DM",
-    "location": "Chicago",
+    "id": "35",
+    "name": "Dr. Vikrant Singh",
+    "specialization": "Rheumatologist",
+    "experience": 10,
+    "degree": "DM Rheumatology",
+    "location": "Delhi",
     "clinic": "Max Healthcare",
-    "price": 474,
-    "cashback": 271,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/24.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "3fd2e8c8-c3ee-44e8-8208-b22f26ba5bbc",
-    "name": "Sarah Smith",
-    "specialization": "Dermatologist",
-    "experience": "10+ years",
-    "degree": "MS",
-    "location": "Los Angeles",
-    "clinic": "Max Healthcare",
-    "price": 1785,
-    "cashback": 13,
+    "price": 2100,
+    "cashback": 155,
     "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/7.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
+    "image": "https://example.com/doctors/vikrant_singh.jpg",
+    "consultModes": ["Hospital Visit"],
+    "languages": ["English", "Hindi"],
+    "facilities": ["Max Healthcare"]
   },
-  {
-    "id": "7a50cb42-f8c1-479e-9d06-70bf7a45d4f9",
-    "name": "Alex Jones",
-    "specialization": "Dermatologist",
-    "experience": "10+ years",
-    "degree": "MS",
-    "location": "Houston",
-    "clinic": "Fortis",
-    "price": 746,
-    "cashback": 418,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/3.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "34772fe4-a89c-400e-b411-008f58ac23b0",
-    "name": "Michael Brown",
-    "specialization": "Pediatrician",
-    "experience": "1-5 years",
-    "degree": "MBBS",
-    "location": "Phoenix",
-    "clinic": "Apollo Hospital",
-    "price": 1305,
-    "cashback": 162,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/39.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "b2cee372-15fe-4c36-a602-3e55bb9d4218",
-    "name": "Michael Brown",
-    "specialization": "Dermatologist",
-    "experience": "5-10 years",
-    "degree": "MD",
-    "location": "Los Angeles",
-    "clinic": "Max Healthcare",
-    "price": 1237,
-    "cashback": 152,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/42.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "c14c4c68-a9a5-4cce-a843-bf2666d9a1e8",
-    "name": "Sarah Williams",
-    "specialization": "Orthopedic",
-    "experience": "10+ years",
-    "degree": "MD",
-    "location": "Phoenix",
-    "clinic": "Apollo Hospital",
-    "price": 872,
-    "cashback": 98,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/3.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "f3b85173-2b7c-433f-b509-39efe176be92",
-    "name": "Jane Williams",
-    "specialization": "Dermatologist",
-    "experience": "10+ years",
-    "degree": "DM",
-    "location": "Phoenix",
-    "clinic": "Other clinic",
-    "price": 370,
-    "cashback": 417,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/67.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "315a223c-e361-46ea-a254-17223ef36ecd",
-    "name": "Jane Williams",
-    "specialization": "Pediatrician",
-    "experience": "1-5 years",
-    "degree": "MS",
-    "location": "Los Angeles",
-    "clinic": "Max Healthcare",
-    "price": 1166,
-    "cashback": 4,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/4.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "0e394667-b5d8-4a4a-9712-f463c1758595",
-    "name": "Sarah Brown",
-    "specialization": "Orthopedic",
-    "experience": "10+ years",
-    "degree": "MD",
-    "location": "New York",
-    "clinic": "Apollo Hospital",
-    "price": 693,
-    "cashback": 127,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/84.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "197c6bac-040b-48cc-845c-a55dd7757fb2",
-    "name": "Sarah Johnson",
-    "specialization": "Psychiatrist",
-    "experience": "10+ years",
-    "degree": "MCh",
-    "location": "Phoenix",
-    "clinic": "Apollo Hospital",
-    "price": 1937,
-    "cashback": 258,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/78.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "faee144a-a18b-45b7-aa38-ee754706d663",
-    "name": "Alex Smith",
-    "specialization": "Psychiatrist",
-    "experience": "1-5 years",
-    "degree": "DM",
-    "location": "New York",
-    "clinic": "Apollo Hospital",
-    "price": 1386,
-    "cashback": 287,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/56.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "f7908314-4f0d-4045-b707-12b010f28389",
-    "name": "Sarah Johnson",
-    "specialization": "Cardiologist",
-    "experience": "10+ years",
-    "degree": "MS",
-    "location": "Los Angeles",
-    "clinic": "Other clinic",
-    "price": 1045,
-    "cashback": 65,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/69.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "3cea583c-c453-48af-8edd-9033c1420ac3",
-    "name": "Jane Smith",
-    "specialization": "Cardiologist",
-    "experience": "10+ years",
-    "degree": "MS",
-    "location": "New York",
-    "clinic": "Max Healthcare",
-    "price": 797,
-    "cashback": 112,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/70.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "500993c0-27ca-46e2-a6fc-eb7b26ad4548",
-    "name": "John Jones",
-    "specialization": "Cardiologist",
-    "experience": "1-5 years",
-    "degree": "MS",
-    "location": "Chicago",
-    "clinic": "Apollo Hospital",
-    "price": 1813,
-    "cashback": 112,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/44.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "77c70941-88b4-44db-ab78-dd41cdaa5aa3",
-    "name": "Emily Jones",
-    "specialization": "Cardiologist",
-    "experience": "1-5 years",
-    "degree": "MCh",
-    "location": "Chicago",
-    "clinic": "Fortis",
-    "price": 1949,
-    "cashback": 380,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/97.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "4ee3fc7c-8c7d-4d86-a1c2-b246cc991601",
-    "name": "John Jones",
-    "specialization": "Orthopedic",
-    "experience": "10+ years",
-    "degree": "DM",
-    "location": "Houston",
-    "clinic": "Max Healthcare",
-    "price": 376,
-    "cashback": 354,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/19.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "2ced82c1-3eff-4965-8472-2b698061876c",
-    "name": "John Williams",
-    "specialization": "Dermatologist",
-    "experience": "10+ years",
-    "degree": "DM",
-    "location": "Houston",
-    "clinic": "Other clinic",
-    "price": 820,
-    "cashback": 133,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/99.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "2d81a240-cb5d-4b05-843b-da53d2801e78",
-    "name": "John Johnson",
-    "specialization": "Cardiologist",
-    "experience": "5-10 years",
-    "degree": "MCh",
-    "location": "Chicago",
-    "clinic": "Max Healthcare",
-    "price": 670,
-    "cashback": 153,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/34.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Spanish",
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "e3489f0a-31c9-49c4-bb9f-11c0ef82c214",
-    "name": "Jane Garcia",
-    "specialization": "Dermatologist",
-    "experience": "10+ years",
-    "degree": "MBBS",
-    "location": "Chicago",
-    "clinic": "Apollo Hospital",
-    "price": 1422,
-    "cashback": 16,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/51.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "f02e6c10-dfce-4f1b-8ee5-e08b74ed8e38",
-    "name": "John Williams",
-    "specialization": "Psychiatrist",
-    "experience": "5-10 years",
-    "degree": "MS",
-    "location": "Chicago",
-    "clinic": "Other clinic",
-    "price": 360,
-    "cashback": 341,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/44.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "26c95381-a519-4a21-af28-12062033ea2b",
-    "name": "Sarah Smith",
-    "specialization": "Orthopedic",
-    "experience": "5-10 years",
-    "degree": "MD",
-    "location": "Chicago",
-    "clinic": "Max Healthcare",
-    "price": 1866,
-    "cashback": 243,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/78.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "ee53bb72-4174-4680-9af0-d6cad0e8ec0d",
-    "name": "Sarah Johnson",
-    "specialization": "Psychiatrist",
-    "experience": "5-10 years",
-    "degree": "MD",
-    "location": "Los Angeles",
-    "clinic": "Max Healthcare",
-    "price": 1259,
-    "cashback": 177,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/43.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "3c307bfb-b785-43dd-a883-5cc31ad1caaf",
-    "name": "Alex Garcia",
-    "specialization": "Psychiatrist",
-    "experience": "5-10 years",
-    "degree": "MCh",
-    "location": "Houston",
-    "clinic": "Max Healthcare",
-    "price": 273,
-    "cashback": 122,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/53.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish",
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "1a2cb896-5039-4feb-baa8-ca8d0852faba",
-    "name": "Jane Johnson",
-    "specialization": "Cardiologist",
-    "experience": "1-5 years",
-    "degree": "MCh",
-    "location": "Phoenix",
-    "clinic": "Other clinic",
-    "price": 1871,
-    "cashback": 159,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/93.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "b258c95c-8b62-46f2-a4dd-6f8e76edfa50",
-    "name": "Jane Brown",
-    "specialization": "Orthopedic",
-    "experience": "1-5 years",
-    "degree": "MS",
-    "location": "Chicago",
-    "clinic": "Fortis",
-    "price": 694,
-    "cashback": 36,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/61.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "46184224-598b-4044-8dbb-7f48d70ba3ad",
-    "name": "John Johnson",
-    "specialization": "Cardiologist",
-    "experience": "10+ years",
-    "degree": "MBBS",
-    "location": "Houston",
-    "clinic": "Max Healthcare",
-    "price": 1041,
-    "cashback": 164,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/10.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "9af7d1f8-a24b-4a09-acf6-5140160a646d",
-    "name": "Emily Jones",
-    "specialization": "Orthopedic",
-    "experience": "10+ years",
-    "degree": "MS",
-    "location": "New York",
-    "clinic": "Fortis",
-    "price": 1954,
-    "cashback": 375,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/45.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "ea0c22cb-dddc-46b2-9f6d-a22a383a64c5",
-    "name": "Jane Brown",
-    "specialization": "Psychiatrist",
-    "experience": "5-10 years",
-    "degree": "DM",
-    "location": "Phoenix",
-    "clinic": "Apollo Hospital",
-    "price": 1522,
-    "cashback": 496,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/55.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "3455cafd-6c29-4229-bf52-bff8a34e9247",
-    "name": "Emily Jones",
-    "specialization": "Psychiatrist",
-    "experience": "1-5 years",
-    "degree": "MD",
-    "location": "Chicago",
-    "clinic": "Max Healthcare",
-    "price": 393,
-    "cashback": 282,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/1.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "cc2fcf75-9603-4bb7-a170-e81759db6e0c",
-    "name": "Emily Brown",
-    "specialization": "Pediatrician",
-    "experience": "1-5 years",
-    "degree": "MCh",
-    "location": "New York",
-    "clinic": "Fortis",
-    "price": 1772,
-    "cashback": 312,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/29.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "e724ee1a-b7a6-4999-b316-c86022b2add8",
-    "name": "Michael Garcia",
-    "specialization": "Orthopedic",
-    "experience": "1-5 years",
-    "degree": "MCh",
-    "location": "Chicago",
-    "clinic": "Max Healthcare",
-    "price": 1705,
-    "cashback": 78,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/63.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "456dca49-27c7-4156-8d70-38ede6116d18",
-    "name": "Sarah Garcia",
-    "specialization": "Dermatologist",
-    "experience": "10+ years",
-    "degree": "MBBS",
-    "location": "Phoenix",
-    "clinic": "Apollo Hospital",
-    "price": 1353,
-    "cashback": 159,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/7.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "99ee91fb-f13d-4c18-882c-b2c59807b781",
-    "name": "Sarah Johnson",
-    "specialization": "Dermatologist",
-    "experience": "10+ years",
-    "degree": "MCh",
-    "location": "Phoenix",
-    "clinic": "Other clinic",
-    "price": 1981,
-    "cashback": 250,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/96.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "ceb4c23e-7bff-4a72-a187-ad8e6373fd8d",
-    "name": "Emily Brown",
-    "specialization": "Dermatologist",
-    "experience": "10+ years",
-    "degree": "MCh",
-    "location": "Phoenix",
-    "clinic": "Apollo Hospital",
-    "price": 1461,
-    "cashback": 350,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/39.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "6d311299-fdfd-4f49-9bf6-87fd5bfeab0a",
-    "name": "Michael Brown",
-    "specialization": "Cardiologist",
-    "experience": "5-10 years",
-    "degree": "MS",
-    "location": "New York",
-    "clinic": "Max Healthcare",
-    "price": 886,
-    "cashback": 250,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/22.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "219ba543-45e0-42df-a8a8-66e15c1095de",
-    "name": "Alex Johnson",
-    "specialization": "Pediatrician",
-    "experience": "10+ years",
-    "degree": "DM",
-    "location": "Houston",
-    "clinic": "Apollo Hospital",
-    "price": 935,
-    "cashback": 82,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/25.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "68f6b677-8f71-4d1f-a454-4b8fd857dd9a",
-    "name": "Alex Williams",
-    "specialization": "Cardiologist",
-    "experience": "10+ years",
-    "degree": "MD",
-    "location": "Houston",
-    "clinic": "Other clinic",
-    "price": 252,
-    "cashback": 117,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/7.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "a638d84c-a9d3-4e0f-bdce-aa81179d5d84",
-    "name": "John Johnson",
-    "specialization": "Psychiatrist",
-    "experience": "10+ years",
-    "degree": "MCh",
-    "location": "Houston",
-    "clinic": "Max Healthcare",
-    "price": 1454,
-    "cashback": 167,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/61.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "63d08aac-9e34-4249-b8c6-e18f2429efcf",
-    "name": "Emily Smith",
-    "specialization": "Dermatologist",
-    "experience": "1-5 years",
-    "degree": "MCh",
-    "location": "Houston",
-    "clinic": "Fortis",
-    "price": 1624,
-    "cashback": 227,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/41.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "a4bf4b8c-44a1-4d71-8595-3a98f4d61d9c",
-    "name": "Jane Garcia",
-    "specialization": "Orthopedic",
-    "experience": "1-5 years",
-    "degree": "MS",
-    "location": "New York",
-    "clinic": "Other clinic",
-    "price": 1979,
-    "cashback": 274,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/48.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "8423b2c5-b68b-480c-b336-083e3ff0cf61",
-    "name": "Emily Johnson",
-    "specialization": "Orthopedic",
-    "experience": "5-10 years",
-    "degree": "MCh",
-    "location": "Houston",
-    "clinic": "Max Healthcare",
-    "price": 1671,
-    "cashback": 305,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/37.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "4d4ff1df-4cfe-47f3-af86-aee92ba4ecb8",
-    "name": "Emily Jones",
-    "specialization": "Dermatologist",
-    "experience": "1-5 years",
-    "degree": "MBBS",
-    "location": "Los Angeles",
-    "clinic": "Max Healthcare",
-    "price": 1379,
-    "cashback": 250,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/39.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "04425a60-7084-4373-8e76-51ae254fe4ca",
-    "name": "Jane Smith",
-    "specialization": "Dermatologist",
-    "experience": "5-10 years",
-    "degree": "MS",
-    "location": "Chicago",
-    "clinic": "Other clinic",
-    "price": 1145,
-    "cashback": 454,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/77.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "1a39051a-95a2-42f9-b103-e0d51121dd23",
-    "name": "Michael Brown",
-    "specialization": "Pediatrician",
-    "experience": "5-10 years",
-    "degree": "MD",
-    "location": "Phoenix",
-    "clinic": "Fortis",
-    "price": 1637,
-    "cashback": 48,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/41.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "f05eb669-e5a5-484b-8e2c-f1fa0596e782",
-    "name": "Sarah Smith",
-    "specialization": "Orthopedic",
-    "experience": "1-5 years",
-    "degree": "MBBS",
-    "location": "Houston",
-    "clinic": "Other clinic",
-    "price": 625,
-    "cashback": 106,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/50.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "e5fa7916-f259-4fa2-812d-9f9a0a440b25",
-    "name": "Sarah Jones",
-    "specialization": "Orthopedic",
-    "experience": "1-5 years",
-    "degree": "MBBS",
-    "location": "Los Angeles",
-    "clinic": "Fortis",
-    "price": 1010,
-    "cashback": 289,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/66.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "ccfe2087-fd9b-4c11-a3a1-14fab7b8f9a5",
-    "name": "John Brown",
-    "specialization": "Orthopedic",
-    "experience": "5-10 years",
-    "degree": "MD",
-    "location": "Los Angeles",
-    "clinic": "Max Healthcare",
-    "price": 1834,
-    "cashback": 181,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/86.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "9fe4b094-4833-40aa-9b7b-c8b5414dfd4e",
-    "name": "Alex Smith",
-    "specialization": "Dermatologist",
-    "experience": "5-10 years",
-    "degree": "MCh",
-    "location": "Los Angeles",
-    "clinic": "Max Healthcare",
-    "price": 600,
-    "cashback": 198,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/10.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "c8ff1415-472d-49de-99b1-4c8f3e8ba838",
-    "name": "Michael Garcia",
-    "specialization": "Psychiatrist",
-    "experience": "1-5 years",
-    "degree": "DM",
-    "location": "Chicago",
-    "clinic": "Other clinic",
-    "price": 1456,
-    "cashback": 408,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/28.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "d359e84f-5446-4731-a6d3-75ee5a52319a",
-    "name": "Emily Smith",
-    "specialization": "Pediatrician",
-    "experience": "5-10 years",
-    "degree": "DM",
-    "location": "Phoenix",
-    "clinic": "Fortis",
-    "price": 1727,
-    "cashback": 15,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/90.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "2188a53d-87c0-4fc0-a28a-8ffef8409cb5",
-    "name": "Emily Smith",
-    "specialization": "Dermatologist",
-    "experience": "1-5 years",
-    "degree": "DM",
-    "location": "New York",
-    "clinic": "Fortis",
-    "price": 837,
-    "cashback": 46,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/96.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "fea89938-23b8-4131-8f7c-35cd8bdade36",
-    "name": "Alex Williams",
-    "specialization": "Dermatologist",
-    "experience": "1-5 years",
-    "degree": "MS",
-    "location": "Phoenix",
-    "clinic": "Other clinic",
-    "price": 1984,
-    "cashback": 383,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/5.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "3020455c-960c-469e-b3fd-93b9370abe3c",
-    "name": "Michael Smith",
-    "specialization": "Psychiatrist",
-    "experience": "5-10 years",
-    "degree": "MCh",
-    "location": "Houston",
-    "clinic": "Max Healthcare",
-    "price": 595,
-    "cashback": 499,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/21.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "f5a7f680-46b7-49ef-b4bc-b46ef53efeda",
-    "name": "Michael Williams",
-    "specialization": "Pediatrician",
-    "experience": "5-10 years",
-    "degree": "MBBS",
-    "location": "New York",
-    "clinic": "Max Healthcare",
-    "price": 1225,
-    "cashback": 78,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/67.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "a2303aec-29c9-43aa-9964-21c01111fc23",
-    "name": "John Brown",
-    "specialization": "Psychiatrist",
-    "experience": "5-10 years",
-    "degree": "MBBS",
-    "location": "Los Angeles",
-    "clinic": "Other clinic",
-    "price": 648,
-    "cashback": 231,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/47.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "6de1638a-2b06-43ad-b218-5be2d181c126",
-    "name": "Sarah Williams",
-    "specialization": "Psychiatrist",
-    "experience": "10+ years",
-    "degree": "MD",
-    "location": "New York",
-    "clinic": "Apollo Hospital",
-    "price": 1934,
-    "cashback": 370,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/75.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "9ae332cf-e0ab-4f26-a0d1-56252b29735c",
-    "name": "Michael Brown",
-    "specialization": "Pediatrician",
-    "experience": "5-10 years",
-    "degree": "MCh",
-    "location": "Chicago",
-    "clinic": "Max Healthcare",
-    "price": 1299,
-    "cashback": 195,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/86.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "3741510b-1e06-4eac-a153-674a80f0964f",
-    "name": "John Smith",
-    "specialization": "Orthopedic",
-    "experience": "10+ years",
-    "degree": "MD",
-    "location": "Phoenix",
-    "clinic": "Max Healthcare",
-    "price": 516,
-    "cashback": 294,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/54.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Spanish",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "75357d41-64d4-419c-8b13-90103f1b1a53",
-    "name": "Alex Jones",
-    "specialization": "Cardiologist",
-    "experience": "10+ years",
-    "degree": "DM",
-    "location": "New York",
-    "clinic": "Max Healthcare",
-    "price": 1918,
-    "cashback": 190,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/30.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "2e5f1a1e-5f63-4fda-b4fe-b8c3804b22a1",
-    "name": "Michael Brown",
-    "specialization": "Pediatrician",
-    "experience": "1-5 years",
-    "degree": "MD",
-    "location": "Houston",
-    "clinic": "Apollo Hospital",
-    "price": 1948,
-    "cashback": 5,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/44.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "2f976fd0-20e0-498a-90fc-38dcb6d7cd70",
-    "name": "Sarah Williams",
-    "specialization": "Cardiologist",
-    "experience": "5-10 years",
-    "degree": "MCh",
-    "location": "New York",
-    "clinic": "Other clinic",
-    "price": 1012,
-    "cashback": 359,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/8.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "a0d88a4c-93b0-459a-acfc-5194a8c6d667",
-    "name": "Michael Brown",
-    "specialization": "Pediatrician",
-    "experience": "10+ years",
-    "degree": "MD",
-    "location": "Houston",
-    "clinic": "Fortis",
-    "price": 1836,
-    "cashback": 56,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/74.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "1c10738d-a0c9-4377-8241-132a46dc0852",
-    "name": "Emily Smith",
-    "specialization": "Cardiologist",
-    "experience": "1-5 years",
-    "degree": "DM",
-    "location": "Chicago",
-    "clinic": "Max Healthcare",
-    "price": 543,
-    "cashback": 382,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/91.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "26adb947-be7d-4097-86a3-8754514c5419",
-    "name": "Emily Johnson",
-    "specialization": "Cardiologist",
-    "experience": "10+ years",
-    "degree": "MCh",
-    "location": "Los Angeles",
-    "clinic": "Max Healthcare",
-    "price": 786,
-    "cashback": 169,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/31.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "3e004525-44b0-4e55-ba7b-cf1450954b46",
-    "name": "Alex Garcia",
-    "specialization": "Orthopedic",
-    "experience": "1-5 years",
-    "degree": "MBBS",
-    "location": "Phoenix",
-    "clinic": "Fortis",
-    "price": 1690,
-    "cashback": 52,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/39.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Spanish",
-      "English"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "73bf8c27-caa0-4c7b-a564-22be327f839c",
-    "name": "Michael Garcia",
-    "specialization": "Cardiologist",
-    "experience": "5-10 years",
-    "degree": "MCh",
-    "location": "Houston",
-    "clinic": "Max Healthcare",
-    "price": 530,
-    "cashback": 151,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/77.jpg",
-    "consultModes": [
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "c125bbbe-cbe7-4604-af35-564111ebd21e",
-    "name": "Alex Johnson",
-    "specialization": "Cardiologist",
-    "experience": "1-5 years",
-    "degree": "MS",
-    "location": "Phoenix",
-    "clinic": "Other clinic",
-    "price": 1794,
-    "cashback": 49,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/6.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "30d48e5d-e61e-4743-afd4-1a25581a593b",
-    "name": "Sarah Williams",
-    "specialization": "Dermatologist",
-    "experience": "5-10 years",
-    "degree": "MD",
-    "location": "Phoenix",
-    "clinic": "Other clinic",
-    "price": 1740,
-    "cashback": 164,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/68.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "dbfa4337-a356-4b36-9e82-f420b857d1ec",
-    "name": "Jane Jones",
-    "specialization": "Dermatologist",
-    "experience": "1-5 years",
-    "degree": "MCh",
-    "location": "Los Angeles",
-    "clinic": "Fortis",
-    "price": 898,
-    "cashback": 54,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/43.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "1e76c4ca-f528-410b-8ba5-b205c3f74cd0",
-    "name": "Jane Smith",
-    "specialization": "Psychiatrist",
-    "experience": "5-10 years",
-    "degree": "MCh",
-    "location": "Phoenix",
-    "clinic": "Apollo Hospital",
-    "price": 1793,
-    "cashback": 455,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/28.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "da5b32b7-952c-422a-8815-d595a765fd8c",
-    "name": "Sarah Brown",
-    "specialization": "Cardiologist",
-    "experience": "10+ years",
-    "degree": "MD",
-    "location": "Los Angeles",
-    "clinic": "Max Healthcare",
-    "price": 433,
-    "cashback": 407,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/23.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "bb8142b7-655b-4094-8c5c-97d4733d3967",
-    "name": "Sarah Johnson",
-    "specialization": "Pediatrician",
-    "experience": "1-5 years",
-    "degree": "DM",
-    "location": "New York",
-    "clinic": "Other clinic",
-    "price": 1912,
-    "cashback": 482,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/96.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Spanish",
-      "Hindi"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "70e269d1-f6a5-4cfc-9550-6a932b3a932d",
-    "name": "Emily Johnson",
-    "specialization": "Psychiatrist",
-    "experience": "1-5 years",
-    "degree": "MCh",
-    "location": "Houston",
-    "clinic": "Apollo Hospital",
-    "price": 1427,
-    "cashback": 172,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/9.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "6df66563-2352-4421-9e98-2c4bc8cf9603",
-    "name": "Jane Brown",
-    "specialization": "Dermatologist",
-    "experience": "1-5 years",
-    "degree": "DM",
-    "location": "Chicago",
-    "clinic": "Other clinic",
-    "price": 1685,
-    "cashback": 184,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/9.jpg",
-    "consultModes": [
-      "Online Consult"
-    ],
-    "languages": [
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "d688dd4e-2cc5-4d4a-ac43-19b6e083a733",
-    "name": "Michael Garcia",
-    "specialization": "Dermatologist",
-    "experience": "10+ years",
-    "degree": "DM",
-    "location": "New York",
-    "clinic": "Other clinic",
-    "price": 420,
-    "cashback": 309,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/60.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Hindi",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "30228618-15bd-4859-a06c-540c2349b067",
-    "name": "Alex Garcia",
-    "specialization": "Orthopedic",
-    "experience": "1-5 years",
-    "degree": "MBBS",
-    "location": "Los Angeles",
-    "clinic": "Fortis",
-    "price": 1148,
-    "cashback": 244,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/33.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "Hindi",
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "651d4f73-4edb-4279-8871-6b6c344af1cc",
-    "name": "Jane Smith",
-    "specialization": "Cardiologist",
-    "experience": "5-10 years",
-    "degree": "DM",
-    "location": "Chicago",
-    "clinic": "Fortis",
-    "price": 1696,
-    "cashback": 231,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/28.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital",
-      "Max Healthcare"
-    ]
-  },
-  {
-    "id": "7acc66dc-8aee-4687-9758-650a72a711bd",
-    "name": "Alex Johnson",
-    "specialization": "Orthopedic",
-    "experience": "1-5 years",
-    "degree": "MS",
-    "location": "Los Angeles",
-    "clinic": "Other clinic",
-    "price": 514,
-    "cashback": 165,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/26.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Spanish",
-      "Hindi"
-    ],
-    "facilities": [
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "961fedae-fa48-4e9d-82eb-81dff433bd59",
-    "name": "Jane Williams",
-    "specialization": "Dermatologist",
-    "experience": "10+ years",
-    "degree": "MBBS",
-    "location": "Houston",
-    "clinic": "Fortis",
-    "price": 1770,
-    "cashback": 360,
-    "availability": "Unavailable",
-    "image": "https://randomuser.me/api/portraits/men/43.jpg",
-    "consultModes": [
-      "Online Consult",
-      "Hospital Visit"
-    ],
-    "languages": [
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare",
-      "Apollo Hospital"
-    ]
-  },
-  {
-    "id": "54a59b63-9d9b-4542-b570-0d3478b42cf0",
-    "name": "Emily Jones",
-    "specialization": "Orthopedic",
-    "experience": "10+ years",
-    "degree": "MS",
-    "location": "Houston",
-    "clinic": "Max Healthcare",
-    "price": 892,
-    "cashback": 369,
-    "availability": "Available",
-    "image": "https://randomuser.me/api/portraits/men/39.jpg",
-    "consultModes": [
-      "Hospital Visit",
-      "Online Consult"
-    ],
-    "languages": [
-      "English",
-      "Spanish"
-    ],
-    "facilities": [
-      "Max Healthcare"
-    ]
-  }
-]

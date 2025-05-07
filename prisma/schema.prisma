@@ -12,7 +12,7 @@ model Doctor {
   id             String   @id @default(uuid())
   name           String
   specialization String
-  experience     String   // e.g., "1-5 years", "5-10 years", "10+ years"
+  experience     Int  // e.g., "1 ", "2", "3" years
   degree         String
   location       String
   clinic         String   // e.g., "Apollo Hospital", "Fortis"

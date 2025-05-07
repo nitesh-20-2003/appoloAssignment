@@ -46,9 +46,16 @@ const options = [
   },
 ];
 
-export function ComboboxDemo() {
+interface ComboboxDemoProps {
+  selectedValue: string;
+  onSelectSort: (value: string) => void;
+}
+
+export function ComboboxDemo({
+  selectedValue,
+  onSelectSort,
+}: ComboboxDemoProps) {
   const [open, setOpen] = React.useState(false);
-  const [value, setValue] = React.useState("relevance"); // Set "relevance" as the default value
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -59,8 +66,9 @@ export function ComboboxDemo() {
           aria-expanded={open}
           className="w-[200px] justify-between"
         >
-          {options.find((option) => option.value === value)?.label}
-          <ChevronsUpDown className="opacity-50" />
+          {options.find((option) => option.value === selectedValue)?.label ||
+            "Select sort..."}
+          <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">
@@ -74,15 +82,19 @@ export function ComboboxDemo() {
                   key={option.value}
                   value={option.value}
                   onSelect={(currentValue) => {
-                    setValue(currentValue === value ? "" : currentValue);
+                    const newValue =
+                      currentValue === selectedValue ? "" : currentValue;
+                    onSelectSort(newValue);
                     setOpen(false);
                   }}
                 >
                   {option.label}
                   <Check
                     className={cn(
-                      "ml-auto",
-                      value === option.value ? "opacity-100" : "opacity-0"
+                      "ml-auto h-4 w-4",
+                      selectedValue === option.value
+                        ? "opacity-100"
+                        : "opacity-0"
                     )}
                   />
                 </CommandItem>

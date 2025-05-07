@@ -65,8 +65,16 @@ export default function DoctorList({ filterQuery }: { filterQuery: string }) {
     } finally {
       setLoading(false);
     }
-  }, [page, filterQuery, specialization, location, mode, experience, fees, language, facilities]);
-
+  }, [
+    page,
+    specialization,
+    location,
+    mode,
+    experience,
+    fees,
+    language,
+    facilities,
+  ]); // Removed filterQuery
   useEffect(() => {
     fetchDoctors();
   }, [fetchDoctors]); // Use fetchDoctors as a dependency

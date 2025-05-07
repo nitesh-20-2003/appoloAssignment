@@ -13,16 +13,20 @@ const filterKeys = {
   "Fees (In Rupees)": "fees",
   Languages: "languages",
   Facilities: "facilities",
+  "Sort By": "sort",  // 🆕 New filter key
 };
 
+
 const Filters = ({ onFilterChange }) => {
-  const [selectedFilters, setSelectedFilters] = useState({
-    "Mode of Consult": [],
-    "Experience Level": [],
-    "Fees (In Rupees)": [],
-    Languages: [],
-    Facilities: [],
-  });
+ const [selectedFilters, setSelectedFilters] = useState({
+   "Mode of Consult": [],
+   "Experience Level": [],
+   "Fees (In Rupees)": [],
+   Languages: [],
+   Facilities: [],
+   "Sort By": [], 
+ });
+
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
