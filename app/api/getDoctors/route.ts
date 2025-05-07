@@ -115,26 +115,32 @@ export const GET = async (req: NextRequest) => {
     if (languages) {
       const languageList = languages
         .split(",")
-        .map((lang) => lang.trim())
+        .map((lang) => lang.trim().toLowerCase()) // Convert each input language to lowercase
         .filter((lang) => lang.length > 0);
-      // console.log("Language list:", languageList);
+
       if (languageList.length > 0) {
         andConditions.push({
           languages: {
-            hasSome: languageList,
+            hasSome: languageList.map(
+              (lang) => lang.charAt(0).toUpperCase() + lang.slice(1)
+            ), // Convert input languages to Capitalized format
           },
         });
-        // console.log(andConditions)
       }
     }
 
     // Facilities filter
     if (facilities) {
-      andConditions.push({
-        facilities: {
-          hasSome: facilities.split(","),
-        },
-      });
+      const facilityList = facilities.split(",").map((f) => f.trim());
+
+      // If the list doesn't include "Other", apply the filter
+      if (!facilityList.includes("Other")) {
+        andConditions.push({
+          facilities: {
+            hasSome: facilityList,
+          },
+        });
+      }
     }
 
     // Sorting

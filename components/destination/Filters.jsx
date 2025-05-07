@@ -186,11 +186,11 @@ const Filters = ({ onFilterChange }) => {
       <FilterGroup
         title="Languages"
         options={[
-          { label: "English", value: "english" },
-          { label: "Spanish", value: "spanish" },
-          { label: "French", value: "french" },
-          { label: "Hindi", value: "hindi" },
-          { label: "Gujarati", value: "gujarati" },
+          { label: "English", value: "English" },
+          { label: "Spanish", value: "Spanish" },
+          { label: "French", value: "French" },
+          { label: "Hindi", value: "Hindi" },
+          { label: "Gujarati", value: "Gujarati" },
         ]}
         selectedValues={selectedFilters["Languages"]}
         onChange={(selected) => handleFilterChange("Languages", selected)}
@@ -199,10 +199,10 @@ const Filters = ({ onFilterChange }) => {
       <FilterGroup
         title="Facilities"
         options={[
-          { label: "Apollo Hospital", value: "apollo" },
-          { label: "Other clinic", value: "other" },
-          { label: "Fortis", value: "fortis" },
-          { label: "Max Healthcare", value: "max" },
+          { label: "Apollo Hospital", value: "Apollo Hospital" },
+          { label: "Other clinic", value: "Other" },
+          { label: "Fortis", value: "Fortis" },
+          { label: "Max Healthcare", value: "Max Healthcare" },
         ]}
         selectedValues={selectedFilters["Facilities"]}
         onChange={(selected) => handleFilterChange("Facilities", selected)}
