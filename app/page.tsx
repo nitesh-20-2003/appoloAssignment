@@ -5,14 +5,14 @@ import Filters from "@/components/destination/Filters";
 import Main from "@/components/destination/Main";
 
 export default function HomePage() {
-  // const searchParams = useSearchParams();
+
   const [filterQuery, setFilterQuery] = useState<string>("");
   const [sortBy, setSortBy] = useState<string>("");
   const router = useRouter();
 
   const handleFilterChange = (query: string) => {
     setFilterQuery(query);
-    // Use replace to avoid adding to history stack
+  
     router.replace(`?${query}`, { scroll: false });
   };
 
@@ -28,7 +28,7 @@ export default function HomePage() {
   };
 
   useEffect(() => {
-    // Initialize from URL on mount
+    
     const params = new URLSearchParams(window.location.search);
     setFilterQuery(params.toString());
     setSortBy(params.get("sort") || "");
